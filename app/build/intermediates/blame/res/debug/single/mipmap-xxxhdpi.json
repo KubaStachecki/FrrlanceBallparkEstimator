@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\cordy\\AndroidStudioProjects\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
-        "source": "C:\\Users\\cordy\\AndroidStudioProjects\\FrrlanceBallparkEstimator\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
         "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     }

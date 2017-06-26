@@ -81,9 +81,9 @@ public class CurrencyFragment extends Fragment implements AdapterView.OnItemClic
 
 
 
-        Toast.makeText(getActivity(),
-                "List click " + test, Toast.LENGTH_SHORT)
-                .show();
+//        Toast.makeText(getActivity(),
+//                "List click " + test, Toast.LENGTH_SHORT)
+//                .show();
 
 MainActivity.openFragment(RateFragment.newInstance(), getActivity());
 

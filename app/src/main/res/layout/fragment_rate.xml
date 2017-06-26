@@ -30,6 +30,14 @@
 
             />
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/rateIn"
+            android:layout_weight="1" />
+
         <Button
             android:id="@+id/next"
             android:onClick=""

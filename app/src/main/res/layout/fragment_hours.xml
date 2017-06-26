@@ -28,6 +28,14 @@
 
             />
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/hursIn"
+            android:layout_weight="1" />
+
         <Button
             android:id="@+id/next2"
             android:onClick=""
