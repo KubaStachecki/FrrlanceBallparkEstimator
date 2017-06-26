@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-26.0.0-alpha1_e3b00f13f33ce3ea3a732226743d6c42a6119ff2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\exploded-aar\com.android.support\support-v4\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-26.0.0-alpha1_064d42c4ad3e20042ba57a1de7642860b653b94c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-26.0.0-alpha1_f42175085da69936d1da43f4b266f1485a368710\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9f2ab946aa5baf5b373bbb91dd506ffc74ef848d">
+        <dex dex="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_c868a61edd6d6b9a06df673830c5bd94d341f0ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a5c2eeb82bbbe27e81e816bca65a708d0373cca7">
+        <dex dex="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f60ffc02dfc986416e34166f184fa29bb68fca38\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kuba-10\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.6.0\48efa6f14074e1a6b16e02ac05eba3fc5c7c7ec8\butterknife-annotations-8.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="48efa6f14074e1a6b16e02ac05eba3fc5c7c7ec8">
+        <dex dex="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-annotations-8.6.0_13f74f799d98c99b5e07ca59e39f74c406723910\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-26.0.0-alpha1_f48d79d73c83a39e1c089dcbf246e0232786429c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-26.0.0-alpha1_ff8198cb5f6a58c921944f58ba7e8fdf89c6b121\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-26.0.0-alpha1_a7f074faae48d74d21f80b7a625a90f318be1b08\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="be587097e648eabfb7f9eca23ab03369894e2d5d">
+        <dex dex="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.jakewharton-butterknife-8.6.0_8628caf0f897c01cf02ec4577a72b871ffb00254\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\exploded-aar\com.android.support\support-fragment\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-26.0.0-alpha1_9533a09bf0b29af4ece708896d1672ec9beacf63\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\exploded-aar\com.android.support\support-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-26.0.0-alpha1_6b6a5f077c469728d3087d5a3c453d0fc52325e6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.0.0-alpha1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-26.0.0-alpha1_07ecc99e9e2126da1c7b63b9864228b9ef595955\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kuba-10\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-26.0.0-alpha1_b98725869305e2476b57ba68575229a3083472be\classes.dex" />
+    </item>
+
+</items>

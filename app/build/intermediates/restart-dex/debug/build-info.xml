@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="23"
+    density="xxhdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="3889793997661"
+    token="-358739329987678787"
+    verifier="COLD_SWAP_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="251" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="14" />
+    <task
+        name="verifier"
+        duration="1" />
+
+    <artifact
+        location="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+        type="DEX" />
+
+    <build
+        timestamp="2513104302797"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="3629515785338"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="3889793997661"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="F:\ANDROID_PROJEKTY\FrrlanceBallparkEstimator\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>
