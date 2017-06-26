@@ -5,6 +5,7 @@ import android.content.pm.ActivityInfo;
 import android.net.Uri;
 
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         numberData = new Numbers();
 
-        openFragment(welcome);
+        openFragment(welcome, this);
 
 
 
@@ -48,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void openFragment(Fragment fragment) {
+    public static void openFragment(Fragment fragment, FragmentActivity context) {
 
-        getSupportFragmentManager()
+        context.getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.container, fragment)
                 .commit();

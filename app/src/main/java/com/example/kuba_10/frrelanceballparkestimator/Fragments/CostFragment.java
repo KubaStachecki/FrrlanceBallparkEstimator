@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
 
 
@@ -71,13 +72,17 @@ public class CostFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View view) {
 
-        FragmentTransaction ft1 = getFragmentManager().beginTransaction();
 
+        MainActivity.openFragment(DiscountFragment.newInstance(), getActivity());
 
-        ft1.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)
-                .replace(R.id.container, DiscountFragment.newInstance())
-                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                .commit();
+//
+//        FragmentTransaction ft1 = getFragmentManager().beginTransaction();
+//
+//
+//        ft1.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)
+//                .replace(R.id.container, DiscountFragment.newInstance())
+//                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+//                .commit();
 
     }
 

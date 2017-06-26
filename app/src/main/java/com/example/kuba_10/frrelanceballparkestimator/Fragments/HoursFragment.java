@@ -105,21 +105,27 @@ public class HoursFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.next2):
 
-                FragmentTransaction ft1 = getFragmentManager().beginTransaction();
-                ft1.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)
-                        .replace(R.id.container, CostFragment.newInstance())
-                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                        .commit();
+                MainActivity.openFragment(CostFragment.newInstance(), getActivity());
+
+
+//                FragmentTransaction ft1 = getFragmentManager().beginTransaction();
+//                ft1.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)
+//                        .replace(R.id.container, CostFragment.newInstance())
+//                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+//                        .commit();
 
                 break;
 
             case (R.id.back):
 
-                FragmentTransaction ft2 = getFragmentManager().beginTransaction();
-                ft2.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)
-                        .replace(R.id.container, RateFragment.newInstance())
-                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                        .commit();
+                MainActivity.openFragment(RateFragment.newInstance(), getActivity());
+
+
+//                FragmentTransaction ft2 = getFragmentManager().beginTransaction();
+//                ft2.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)
+//                        .replace(R.id.container, RateFragment.newInstance())
+//                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+//                        .commit();
 
         }
 

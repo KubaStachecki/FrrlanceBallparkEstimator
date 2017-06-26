@@ -58,11 +58,11 @@ public class CurrencyFragment extends Fragment implements AdapterView.OnItemClic
         currList = curr.currencyList();
 
 
+
         adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, currList);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(this);
-
 
         return view;
 
@@ -85,14 +85,17 @@ public class CurrencyFragment extends Fragment implements AdapterView.OnItemClic
                 "List click " + test, Toast.LENGTH_SHORT)
                 .show();
 
+MainActivity.openFragment(RateFragment.newInstance(), getActivity());
 
-        FragmentTransaction ft1 = getFragmentManager().beginTransaction();
 
 
-        ft1.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)
-                .replace(R.id.container, RateFragment.newInstance())
-                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-                .commit();
+//        FragmentTransaction ft1 = getFragmentManager().beginTransaction();
+//
+//
+//        ft1.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)
+//                .replace(R.id.container, RateFragment.newInstance())
+//                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+//                .commit();
 
 
 

@@ -1,7 +1,4 @@
-#Mon Jun 26 12:40:22 CEST 2017
-base.0=F\:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_f60ffc02dfc986416e34166f184fa29bb68fca38
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=F\:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_c868a61edd6d6b9a06df673830c5bd94d341f0ba\\classes.dex
-base.1=F\:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_c868a61edd6d6b9a06df673830c5bd94d341f0ba
-file.0=F\:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_f60ffc02dfc986416e34166f184fa29bb68fca38\\classes.dex
+#Mon Jun 26 14:57:26 CEST 2017
+base.0=C\:\\Users\\cordy\\AndroidStudioProjects\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Users\\cordy\\AndroidStudioProjects\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
