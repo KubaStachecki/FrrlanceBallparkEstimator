@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
 
 
@@ -97,6 +98,8 @@ public class HoursFragment extends Fragment implements View.OnClickListener {
 //
     @Override
     public void onClick(View view) {
+
+
 
         switch (view.getId()) {
 

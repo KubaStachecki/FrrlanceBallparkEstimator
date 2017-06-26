@@ -1,4 +1,4 @@
-#Mon Jun 26 11:22:35 CEST 2017
+#Mon Jun 26 12:40:22 CEST 2017
 base.0=F\:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_f60ffc02dfc986416e34166f184fa29bb68fca38
 renamed.1=classes.dex
 renamed.0=classes2.dex
