@@ -33,7 +33,9 @@
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
-            android:id="@+id/hursIn"
+            android:text="0"
+
+            android:id="@+id/hoursIn"
             android:layout_weight="1" />
 
         <Button
@@ -46,12 +48,12 @@
 
 
         <Button
-            android:id="@+id/back"
+            android:id="@+id/back2"
             android:onClick=""
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:text="Back" />
+            android:text="Back2" />
 
 
 

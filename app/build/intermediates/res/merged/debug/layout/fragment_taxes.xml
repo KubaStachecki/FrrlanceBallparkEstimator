@@ -28,6 +28,16 @@
 
             />
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:text="0"
+
+            android:id="@+id/taxesIn"
+            android:layout_weight="1" />
+
         <Button
             android:id="@+id/next6"
             android:onClick=""
@@ -35,6 +45,15 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:text="Next6" />
+
+
+        <Button
+            android:id="@+id/back6"
+            android:onClick=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Back6" />
 
 
     </LinearLayout>

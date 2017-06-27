@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
@@ -18,6 +19,7 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
 
     Button nextBut4;
     Button backBut4;
+    TextView input;
 
 
 
@@ -45,8 +47,13 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
         nextBut4 = (Button) view.findViewById(R.id.next4);
         nextBut4.setOnClickListener(this);
 
-        backBut4 = (Button) view.findViewById(R.id.next4);
+        backBut4 = (Button) view.findViewById(R.id.back4);
         backBut4.setOnClickListener(this);
+
+
+        input = view.findViewById(R.id.discountIn);
+        input.setText(Float.toString(MainActivity.getNumberData().getDiscount()));
+
 
 
         return view;
@@ -59,6 +66,9 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
         switch (view.getId()) {
 
             case (R.id.next4):
+
+                MainActivity.getNumberData().setDiscount( Float.parseFloat( input.getText().toString() ));
+
 
                 MainActivity.openFragment(BonusFragment.newInstance(), getActivity());
 

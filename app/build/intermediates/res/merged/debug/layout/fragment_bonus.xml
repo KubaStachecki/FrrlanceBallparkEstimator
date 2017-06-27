@@ -32,6 +32,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
+            android:text="0"
+
             android:ems="10"
             android:id="@+id/bonusIn"
             android:layout_weight="1" />
@@ -43,6 +45,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:text="Next5" />
+
+        <Button
+            android:id="@+id/back5"
+            android:onClick=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Back5" />
 
 
     </LinearLayout>

@@ -70,12 +70,16 @@ public class CurrencyFragment extends Fragment implements AdapterView.OnItemClic
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-        String test = (String) adapter.getItem(i);
+        String chosenCurr = (String) adapter.getItem(i);
 
-        MainActivity.getNumberData().setCurrency(test);
-
+        MainActivity.getNumberData().setCurrency(chosenCurr);
 
         MainActivity.openFragment(RateFragment.newInstance(), getActivity());
+
+
+
+      //   Toast.makeText(getActivity(), MainActivity.getNumberData().getCurrency(), Toast.LENGTH_SHORT).show();
+
 
 
     }

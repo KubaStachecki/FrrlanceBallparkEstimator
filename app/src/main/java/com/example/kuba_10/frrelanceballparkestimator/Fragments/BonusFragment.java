@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
@@ -18,6 +19,7 @@ public class BonusFragment extends Fragment implements View.OnClickListener {
 
     Button nextBut5;
     Button backBut5;
+    TextView input;
 
 
     public BonusFragment() {
@@ -50,6 +52,10 @@ public class BonusFragment extends Fragment implements View.OnClickListener {
         backBut5.setOnClickListener(this);
 
 
+        input = view.findViewById(R.id.bonusIn);
+        input.setText(Float.toString(MainActivity.getNumberData().getBonus()));
+
+
         return view;
 
 
@@ -61,6 +67,9 @@ public class BonusFragment extends Fragment implements View.OnClickListener {
         switch (view.getId()) {
 
             case (R.id.next5):
+
+                MainActivity.getNumberData().setBonus(Float.parseFloat(input.getText().toString()));
+
 
                 MainActivity.openFragment(TaxesFragment.newInstance(), getActivity());
 

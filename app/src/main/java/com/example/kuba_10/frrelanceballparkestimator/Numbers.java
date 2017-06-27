@@ -3,18 +3,18 @@ package com.example.kuba_10.frrelanceballparkestimator;
 
 public class Numbers {
 
-    private float rate;
-    private float hours;
+    private float rate =0;
+    private float hours =0;
     private String currency;
-    private float cost;
+    private float cost =0 ;
 
-    private float bonus;
-    private float discount;
-    private float taxes;
+    private float bonus =0;
+    private float discount =0;
+    private float taxes =0;
 
-    private float workCost;
-    private float workSum;
-    private float ballpark;
+    private float workCost =0;
+    private float workSum =0;
+    private float ballpark =0;
 
 
 

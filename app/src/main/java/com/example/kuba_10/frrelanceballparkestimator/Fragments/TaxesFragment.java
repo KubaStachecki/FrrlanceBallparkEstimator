@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
@@ -18,6 +19,8 @@ public class TaxesFragment extends Fragment implements View.OnClickListener {
 
     Button nextBut6;
     Button backBut6;
+    TextView input;
+
 
 
     // TODO: Rename and change types and number of parameters
@@ -38,9 +41,15 @@ public class TaxesFragment extends Fragment implements View.OnClickListener {
 
         nextBut6.setOnClickListener(this);
 
-        backBut6 = view.findViewById(R.id.next6);
+        backBut6 = view.findViewById(R.id.back6);
 
         backBut6.setOnClickListener(this);
+
+
+        input = view.findViewById(R.id.taxesIn);
+        input.setText(Float.toString(MainActivity.getNumberData().getTaxes()));
+
+
 
         return view;
     }
@@ -52,6 +61,9 @@ public class TaxesFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.next6):
 
+                MainActivity.getNumberData().setTaxes(Float.parseFloat(input.getText().toString()));
+
+
                 MainActivity.openFragment(FinalFragment.newInstance(), getActivity());
 
 
@@ -62,10 +74,7 @@ public class TaxesFragment extends Fragment implements View.OnClickListener {
                 MainActivity.openFragment(BonusFragment.newInstance(), getActivity());
 
 
-
-
         }
-
 
 
     }

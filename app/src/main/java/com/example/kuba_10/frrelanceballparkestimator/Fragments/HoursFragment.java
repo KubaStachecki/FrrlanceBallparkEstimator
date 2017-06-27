@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
@@ -19,6 +20,8 @@ public class HoursFragment extends Fragment implements View.OnClickListener {
 
     Button nextBut2;
     Button backBut2;
+    TextView input;
+
 
 
     public HoursFragment() {
@@ -48,6 +51,9 @@ public class HoursFragment extends Fragment implements View.OnClickListener {
         backBut2 = (Button) view.findViewById(R.id.back2);
         backBut2.setOnClickListener(this);
 
+        input =  view.findViewById(R.id.hoursIn);
+        input.setText(Float.toString(MainActivity.getNumberData().getHours()));
+
         return view;
 
     }
@@ -61,6 +67,9 @@ public class HoursFragment extends Fragment implements View.OnClickListener {
         switch (view.getId()) {
 
             case (R.id.next2):
+
+                MainActivity.getNumberData().setHours( Float.parseFloat( input.getText().toString() ));
+
 
                 MainActivity.openFragment(CostFragment.newInstance(), getActivity());
 

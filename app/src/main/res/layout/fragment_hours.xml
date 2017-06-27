@@ -35,7 +35,7 @@
             android:ems="10"
             android:text="0"
 
-            android:id="@+id/hursIn"
+            android:id="@+id/hoursIn"
             android:layout_weight="1" />
 
         <Button

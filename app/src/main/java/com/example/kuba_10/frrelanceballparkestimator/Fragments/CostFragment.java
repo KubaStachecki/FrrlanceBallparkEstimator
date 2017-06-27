@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
@@ -17,11 +18,9 @@ import com.example.kuba_10.frrelanceballparkestimator.R;
 public class CostFragment extends Fragment implements View.OnClickListener {
 
 
-
-
     Button nextBut3;
     Button backBut3;
-
+    TextView input;
 
 
     public CostFragment() {
@@ -37,7 +36,6 @@ public class CostFragment extends Fragment implements View.OnClickListener {
     }
 
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -48,8 +46,11 @@ public class CostFragment extends Fragment implements View.OnClickListener {
         nextBut3 = (Button) view.findViewById(R.id.next3);
         nextBut3.setOnClickListener(this);
 
-        backBut3 = (Button) view.findViewById(R.id.next3);
+        backBut3 = (Button) view.findViewById(R.id.back3);
         backBut3.setOnClickListener(this);
+
+        input = view.findViewById(R.id.costIn);
+        input.setText(Float.toString(MainActivity.getNumberData().getCost()));
 
 
         return view;
@@ -61,24 +62,17 @@ public class CostFragment extends Fragment implements View.OnClickListener {
 
 
         switch (view.getId()) {
-
             case (R.id.next3):
 
+                MainActivity.getNumberData().setCost(Float.parseFloat(input.getText().toString()));
+
+
                 MainActivity.openFragment(DiscountFragment.newInstance(), getActivity());
-
-
                 break;
 
             case (R.id.back3):
-
                 MainActivity.openFragment(HoursFragment.newInstance(), getActivity());
 
-
-
-
         }
-
     }
-
-
 }
