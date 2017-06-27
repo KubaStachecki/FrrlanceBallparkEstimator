@@ -3,20 +3,18 @@ package com.example.kuba_10.frrelanceballparkestimator;
 
 public class Numbers {
 
-    private float rate =0;
-    private float hours =0;
+    private float rate = 0;
+    private float hours = 0;
     private String currency;
-    private float cost =0 ;
+    private float cost = 0;
 
-    private float bonus =0;
-    private float discount =0;
-    private float taxes =0;
+    private float bonus = 0;
+    private float discount = 0;
+    private float taxes = 0;
 
-    private float workCost =0;
-    private float workSum =0;
-    private float ballpark =0;
-
-
+    private float workCost = 0;
+    private float workSum = 0;
+    private float ballpark = 0;
 
 
     public float getRate() {
@@ -98,4 +96,48 @@ public class Numbers {
     public void setBallpark(float ballpark) {
         this.ballpark = ballpark;
     }
+
+    public float workCost() {
+
+        workCost = rate * hours;
+
+        return workCost;
+
+    }
+
+    public float costSum() {
+
+        float workAmount = workCost();
+
+        float taxAmount = (workAmount / 100) * taxes;
+        float discountAmount = (workAmount / 100) * discount;
+        float bonusAmount = (workAmount / 100) * bonus;
+
+
+        workSum = ((workAmount + bonusAmount + cost) - discountAmount) + taxAmount;
+
+
+        return workSum;
+    }
+
+
+    public float ballparkMin() {
+
+        float sum = costSum();
+
+        return sum - ((sum/100) *30);
+
+    }
+
+
+    public float ballparkMax() {
+
+        float sum = costSum();
+
+        return sum + ((sum/100) *30);
+
+    }
+
+
+
 }

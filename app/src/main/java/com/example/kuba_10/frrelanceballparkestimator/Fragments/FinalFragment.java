@@ -7,11 +7,19 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
+import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
 
 
-public class FinalFragment extends Fragment {
+public class FinalFragment extends Fragment implements View.OnClickListener {
+
+    TextView workCost;
+    TextView costSum;
+    TextView ballpark;
+    Button again;
 
 
 
@@ -31,7 +39,30 @@ public class FinalFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_final, container, false);
+         View view = inflater.inflate(R.layout.fragment_final, container, false);
+
+        workCost = view.findViewById(R.id.workCost);
+        costSum = view.findViewById(R.id.costSum);
+        ballpark = view.findViewById(R.id.ballpark);
+
+
+        workCost.setText(Float.toString(MainActivity.getNumberData().workCost()) + "  " + MainActivity.getNumberData().getCurrency());
+        costSum.setText(Float.toString(MainActivity.getNumberData().costSum()) + "  " + MainActivity.getNumberData().getCurrency() );
+        ballpark.setText("" + Float.toString(MainActivity.getNumberData().ballparkMin()) + " - " + Float.toString(MainActivity.getNumberData().ballparkMax()) + "  " + MainActivity.getNumberData().getCurrency());
+
+
+        again = (Button) view.findViewById(R.id.again);
+        again.setOnClickListener(this);
+
+
+        return view;
     }
 
+    @Override
+    public void onClick(View view) {
+
+        MainActivity.openFragment(RateFragment.newInstance(), getActivity());
+
+
+    }
 }

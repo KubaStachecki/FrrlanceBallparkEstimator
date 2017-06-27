@@ -13,26 +13,32 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="FINAL FINAL FINAL" />
+            android:text="FINAL CALCULATION" />
 
         <TextView
             android:text="TextView work cost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView2" />
+            android:id="@+id/workCost" />
 
         <TextView
             android:text="TextView calculated cost"
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView3" />
+            android:id="@+id/costSum" />
 
         <TextView
             android:text="TextView estimation between"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView4" />
+            android:id="@+id/ballpark" />
+
+        <Button
+            android:text="Again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/again" />
     </LinearLayout>
 
 </FrameLayout>
