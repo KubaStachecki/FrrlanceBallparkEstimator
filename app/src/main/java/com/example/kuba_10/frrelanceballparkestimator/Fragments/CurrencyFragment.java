@@ -31,7 +31,6 @@ public class CurrencyFragment extends Fragment implements AdapterView.OnItemClic
     private ArrayList currList;
 
 
-
     public CurrencyFragment() {
         // Required empty public constructor
     }
@@ -58,7 +57,6 @@ public class CurrencyFragment extends Fragment implements AdapterView.OnItemClic
         currList = curr.currencyList();
 
 
-
         adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, currList);
         listView.setAdapter(adapter);
 
@@ -69,7 +67,6 @@ public class CurrencyFragment extends Fragment implements AdapterView.OnItemClic
 
     }
 
-
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
@@ -78,67 +75,10 @@ public class CurrencyFragment extends Fragment implements AdapterView.OnItemClic
         MainActivity.getNumberData().setCurrency(test);
 
 
-
-
-
-//        Toast.makeText(getActivity(),
-//                "List click " + test, Toast.LENGTH_SHORT)
-//                .show();
-
-MainActivity.openFragment(RateFragment.newInstance(), getActivity());
-
-
-
-//        FragmentTransaction ft1 = getFragmentManager().beginTransaction();
-//
-//
-//        ft1.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)
-//                .replace(R.id.container, RateFragment.newInstance())
-//                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-//                .commit();
-
-
+        MainActivity.openFragment(RateFragment.newInstance(), getActivity());
 
 
     }
 
 
-//    // TODO: Rename method, update argument and hook method into UI event
-//    public void onButtonPressed(Uri uri) {
-//        if (mListener != null) {
-//            mListener.onFragmentInteraction(uri);
-//        }
-//    }
-//
-//    @Override
-//    public void onAttach(Context context) {
-//        super.onAttach(context);
-//        if (context instanceof OnFragmentInteractionListener) {
-//            mListener = (OnFragmentInteractionListener) context;
-//        } else {
-//            throw new RuntimeException(context.toString()
-//                    + " must implement OnFragmentInteractionListener");
-//        }
-//    }
-//
-//    @Override
-//    public void onDetach() {
-//        super.onDetach();
-//        mListener = null;
-//    }
-//
-//    /**
-//     * This interface must be implemented by activities that contain this
-//     * fragment to allow an interaction in this fragment to be communicated
-//     * to the activity and potentially other fragments contained in that
-//     * activity.
-//     * <p>
-//     * See the Android Training lesson <a href=
-//     * "http://developer.android.com/training/basics/fragments/communicating.html"
-//     * >Communicating with Other Fragments</a> for more information.
-//     */
-//    public interface OnFragmentInteractionListener {
-//        // TODO: Update argument type and name
-//        void onFragmentInteraction(Uri uri);
-//    }
 }

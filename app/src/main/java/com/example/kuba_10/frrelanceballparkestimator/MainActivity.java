@@ -32,9 +32,6 @@ public class MainActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
 
-        //THIS IS A TEST FOR GIT REPO//
-
-
         container = (FrameLayout) findViewById(R.id.container);
 
         Fragment welcome = (Fragment) WelcomeFrag.newInstance();
@@ -53,7 +50,10 @@ public class MainActivity extends AppCompatActivity {
 
         context.getSupportFragmentManager()
                 .beginTransaction()
+                .setTransition(android.support.v4.app.FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)
                 .replace(R.id.container, fragment)
+                .setTransition(android.support.v4.app.FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
+
                 .commit();
     }
 
