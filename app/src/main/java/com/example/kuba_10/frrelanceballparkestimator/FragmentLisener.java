@@ -11,11 +11,13 @@ public interface FragmentLisener {
 
     public void openFragment(Fragment fragment, FragmentActivity context);
 
-    public void saveToSharedPreferences(String note, String key, Context context, SharedPreferences field) ;
+    public void saveToSharedPreferences(String note, String key, Context context) ;
 
-    public String getSharedPreferences(String key, SharedPreferences field );
+    public String getSharedPreferences(String key);
 
     public Numbers getNumberData();
+
+    public void showSnackbar(String text);
 
 
 }

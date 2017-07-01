@@ -25,8 +25,6 @@ public class TaxesFragment extends Fragment implements View.OnClickListener {
     private FragmentLisener fragmentLisener;
 
 
-
-
     // TODO: Rename and change types and number of parameters
     public static TaxesFragment newInstance() {
         TaxesFragment fragment = new TaxesFragment();
@@ -52,16 +50,15 @@ public class TaxesFragment extends Fragment implements View.OnClickListener {
 
         input = view.findViewById(R.id.taxesIn);
 
-        if (fragmentLisener.getNumberData().getCost() == 0) {
+        if (fragmentLisener.getNumberData().getCost() == 0 && fragmentLisener.getSharedPreferences("taxes") == null) {
 
             input.setText("");
 
         } else {
 
-            input.setText(Float.toString(fragmentLisener.getNumberData().getTaxes()));
+            input.setText(fragmentLisener.getSharedPreferences("taxes"));
 
         }
-
 
 
         return view;
@@ -84,8 +81,17 @@ public class TaxesFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.next6):
 
-                fragmentLisener.getNumberData().setTaxes(Float.parseFloat(input.getText().toString()));
 
+                fragmentLisener.saveToSharedPreferences(input.getText().toString(), "taxes", getActivity());
+
+                if (input.getText().toString().equals("")) {
+
+                    fragmentLisener.getNumberData().setTaxes(0);
+                } else
+
+                {
+                    fragmentLisener.getNumberData().setTaxes(Float.parseFloat(fragmentLisener.getSharedPreferences("taxes")));
+                }
 
                 fragmentLisener.openFragment(FinalFragment.newInstance(), getActivity());
 

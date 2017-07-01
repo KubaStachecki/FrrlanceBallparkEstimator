@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.kuba_10.frrelanceballparkestimator.FragmentLisener;
 import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
 
@@ -20,6 +21,8 @@ public class BonusFragment extends Fragment implements View.OnClickListener {
     Button nextBut5;
     Button backBut5;
     TextView input;
+
+    private FragmentLisener fragmentLisener;
 
 
     public BonusFragment() {
@@ -53,10 +56,30 @@ public class BonusFragment extends Fragment implements View.OnClickListener {
 
 
         input = view.findViewById(R.id.bonusIn);
-        input.setText(Float.toString(MainActivity.getNumberData().getBonus()));
+
+
+
+        if (fragmentLisener.getNumberData().getBonus() == 0 ) {
+
+            input.setText("");
+
+        } else {
+            input.setText(Float.toString(fragmentLisener.getNumberData().getBonus()));
+
+
+        }
 
 
         return view;
+
+
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+
+        fragmentLisener = (FragmentLisener) context;
 
 
     }
@@ -68,25 +91,28 @@ public class BonusFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.next5):
 
-                MainActivity.getNumberData().setBonus(Float.parseFloat(input.getText().toString()));
+                if (input.getText().toString().equals("")) {
+
+                    fragmentLisener.getNumberData().setBonus(0);
+                } else
+
+                {
+                    fragmentLisener.getNumberData().setBonus(Float.parseFloat(input.getText().toString()));
+
+                }
 
 
-                MainActivity.openFragment(TaxesFragment.newInstance(), getActivity());
+                fragmentLisener.openFragment(TaxesFragment.newInstance(), getActivity());
 
 
                 break;
 
             case (R.id.back5):
 
-                MainActivity.openFragment(DiscountFragment.newInstance(), getActivity());
-
-
+                fragmentLisener.openFragment(DiscountFragment.newInstance(), getActivity());
 
 
         }
-
-
-
 
 
     }

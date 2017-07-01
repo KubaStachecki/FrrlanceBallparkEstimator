@@ -89,10 +89,19 @@ public class HoursFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.next2):
 
-                fragmentLisener.getNumberData().setHours( Float.parseFloat( input.getText().toString() ));
+                if (input.getText().toString().equals("")) {
+
+                    fragmentLisener.showSnackbar("You have to input time estimation");
+
+                } else
+
+                {
+                    fragmentLisener.getNumberData().setHours( Float.parseFloat( input.getText().toString() ));
+                    fragmentLisener.openFragment(CostFragment.newInstance(), getActivity());
+
+                }
 
 
-                fragmentLisener.openFragment(CostFragment.newInstance(), getActivity());
 
 
                 break;

@@ -26,8 +26,6 @@ public class RateFragment extends Fragment implements View.OnClickListener {
     private FragmentLisener fragmentLisener;
 
 
-
-
     public RateFragment() {
         // Required empty public constructor
     }
@@ -56,11 +54,13 @@ public class RateFragment extends Fragment implements View.OnClickListener {
         input = view.findViewById(R.id.rateIn);
 
 
-        if (fragmentLisener.getNumberData().getCost() == 0) {
+        if (fragmentLisener.getNumberData().getRate() == 0 && fragmentLisener.getSharedPreferences("rate") == null) {
 
             input.setText("");
+
         } else {
-            input.setText(Float.toString(fragmentLisener.getNumberData().getRate()));
+
+            input.setText(fragmentLisener.getSharedPreferences("rate"));
 
         }
 
@@ -85,11 +85,18 @@ public class RateFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.next):
 
-                fragmentLisener.getNumberData().setRate(Float.parseFloat(input.getText().toString()));
 
-                fragmentLisener.openFragment(HoursFragment.newInstance(), getActivity());
+                if (input.getText().toString().equals("")) {
 
+                    fragmentLisener.showSnackbar("You have to input hour rate");
+                } else
 
+                {
+                    fragmentLisener.saveToSharedPreferences(input.getText().toString(), "rate", getActivity());
+                    fragmentLisener.getNumberData().setRate(Float.parseFloat(fragmentLisener.getSharedPreferences("rate")));
+                    fragmentLisener.openFragment(HoursFragment.newInstance(), getActivity());
+
+                }
 
 
 
@@ -105,7 +112,6 @@ public class RateFragment extends Fragment implements View.OnClickListener {
 
 
     }
-
 
 
 }

@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.kuba_10.frrelanceballparkestimator.Currency;
+import com.example.kuba_10.frrelanceballparkestimator.FragmentLisener;
 import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
 
@@ -24,6 +25,8 @@ import butterknife.Unbinder;
 public class WelcomeFrag extends Fragment implements View.OnClickListener {
 
     Button startBut;
+    private FragmentLisener fragmentLisener;
+
 
 
     public WelcomeFrag() {
@@ -36,6 +39,15 @@ public class WelcomeFrag extends Fragment implements View.OnClickListener {
         WelcomeFrag fragment = new WelcomeFrag();
 
         return fragment;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+
+        fragmentLisener = (FragmentLisener) context;
+
+
     }
 
 
@@ -56,7 +68,7 @@ public class WelcomeFrag extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View view) {
 
-        MainActivity.openFragment(CurrencyFragment.newInstance(), getActivity());
+        fragmentLisener.openFragment(CurrencyFragment.newInstance(), getActivity());
 
 
         // Toast.makeText(getActivity(), "Working", Toast.LENGTH_SHORT).show();

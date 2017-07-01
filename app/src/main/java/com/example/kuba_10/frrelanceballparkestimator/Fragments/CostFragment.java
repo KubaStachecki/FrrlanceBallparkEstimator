@@ -26,7 +26,6 @@ public class CostFragment extends Fragment implements View.OnClickListener {
     private FragmentLisener fragmentLisener;
 
 
-
     public CostFragment() {
         // Required empty public constructor
     }
@@ -67,6 +66,7 @@ public class CostFragment extends Fragment implements View.OnClickListener {
         if (fragmentLisener.getNumberData().getCost() == 0) {
 
             input.setText("");
+
         } else {
 
             input.setText(Float.toString(fragmentLisener.getNumberData().getCost()));
@@ -84,13 +84,23 @@ public class CostFragment extends Fragment implements View.OnClickListener {
         switch (view.getId()) {
             case (R.id.next3):
 
-                fragmentLisener.getNumberData().setCost(Float.parseFloat(input.getText().toString()));
+                if (input.getText().toString().equals("")) {
+
+                    fragmentLisener.getNumberData().setCost(0);
+                } else
+
+                {
+                    fragmentLisener.getNumberData().setCost(Float.parseFloat(input.getText().toString()));
+
+                }
 
 
                 fragmentLisener.openFragment(DiscountFragment.newInstance(), getActivity());
+
                 break;
 
             case (R.id.back3):
+
                 fragmentLisener.openFragment(HoursFragment.newInstance(), getActivity());
 
         }

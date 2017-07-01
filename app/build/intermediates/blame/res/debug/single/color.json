@@ -16,6 +16,10 @@
         "source": "C:\\Users\\cordy\\AndroidStudioProjects\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color\\abc_tint_edittext.xml"
     },
     {
+        "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_error.xml",
+        "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.1\\res\\color\\design_error.xml"
+    },
+    {
         "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
         "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color\\abc_secondary_text_material_light.xml"
     },
@@ -90,6 +94,10 @@
     {
         "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
         "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color\\abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color\\design_tint_password_toggle.xml",
+        "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.1\\res\\color\\design_tint_password_toggle.xml"
     },
     {
         "merged": "C:\\Users\\cordy\\AndroidStudioProjects\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_spinner.xml",

@@ -25,8 +25,6 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
     private FragmentLisener fragmentLisener;
 
 
-
-
     public DiscountFragment() {
         // Required empty public constructor
     }
@@ -40,12 +38,11 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
     }
 
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view =  inflater.inflate(R.layout.fragment_discount, container, false);
+        View view = inflater.inflate(R.layout.fragment_discount, container, false);
 
 
         nextBut4 = (Button) view.findViewById(R.id.next4);
@@ -56,8 +53,16 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
 
 
         input = view.findViewById(R.id.discountIn);
-        input.setText(Float.toString(fragmentLisener.getNumberData().getDiscount()));
 
+        if (fragmentLisener.getNumberData().getDiscount() == 0 ) {
+
+            input.setText("");
+
+        } else {
+
+            input.setText(Float.toString(fragmentLisener.getNumberData().getDiscount()));
+
+        }
 
 
         return view;
@@ -82,7 +87,16 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.next4):
 
-                fragmentLisener.getNumberData().setDiscount( Float.parseFloat( input.getText().toString() ));
+                if (input.getText().toString().equals("")) {
+
+                    fragmentLisener.getNumberData().setDiscount(0);
+
+                } else
+
+                {
+                    fragmentLisener.getNumberData().setDiscount(Float.parseFloat(input.getText().toString()));
+
+                }
 
 
                 fragmentLisener.openFragment(BonusFragment.newInstance(), getActivity());
@@ -95,14 +109,10 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
                 fragmentLisener.openFragment(CostFragment.newInstance(), getActivity());
 
 
-
-
         }
 
 
-
     }
-
 
 
 }

@@ -1,6 +1,7 @@
 package com.example.kuba_10.frrelanceballparkestimator.Fragments;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -30,6 +31,8 @@ public class CurrencyFragment extends Fragment implements AdapterView.OnItemClic
     private ArrayAdapter adapter;
     private ListView listView;
     private ArrayList currList;
+    private SharedPreferences sharedPreferences;
+
 
     private FragmentLisener fragmentLisener;
 
@@ -85,6 +88,8 @@ public class CurrencyFragment extends Fragment implements AdapterView.OnItemClic
         String chosenCurr = (String) adapter.getItem(i);
 
         fragmentLisener.getNumberData().setCurrency(chosenCurr);
+
+      //  fragmentLisener.saveToSharedPreferences(chosenCurr, "currency", getActivity());
 
         fragmentLisener.openFragment(RateFragment.newInstance(), getActivity());
 
