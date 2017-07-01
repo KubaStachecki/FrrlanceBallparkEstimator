@@ -56,12 +56,12 @@
         "source": "C:\\Users\\cordy\\AndroidStudioProjects\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "C:\\Users\\cordy\\AndroidStudioProjects\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Users\\cordy\\AndroidStudioProjects\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
         "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_currency.xml",
         "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\src\\main\\res\\layout\\fragment_currency.xml"
+    },
+    {
+        "merged": "C:\\Users\\cordy\\AndroidStudioProjects\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\cordy\\AndroidStudioProjects\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout\\notification_template_part_time.xml"
     },
     {
         "merged": "C:\\Users\\cordy\\AndroidStudioProjects\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",

@@ -4,27 +4,21 @@ import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.net.Uri;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Button;
-import android.support.design.widget.Snackbar;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
 import com.example.kuba_10.frrelanceballparkestimator.Fragments.WelcomeFrag;
-
-import static android.R.id.message;
 
 
 public class MainActivity extends AppCompatActivity implements FragmentLisener {
 
 
     public FrameLayout container;
-    Button startBut;
     public Numbers numberData;
     private SharedPreferences sharedPreferences;
 
@@ -39,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements FragmentLisener {
 
         //Snackbar.make(this, text,Snackbar.LENGTH_SHORT);
 
-        Toast.makeText(this,text,Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
 
     }
 
@@ -63,20 +57,8 @@ public class MainActivity extends AppCompatActivity implements FragmentLisener {
 
     }
 
-@Override
-    public void openFragment(Fragment fragment, FragmentActivity context) {
-
-        context.getSupportFragmentManager()
-                .beginTransaction()
-                .setTransition(android.support.v4.app.FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)
-                .replace(R.id.container, fragment)
-                .setTransition(android.support.v4.app.FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-
-                .commit();
-    }
-
     @Override
-    public void saveToSharedPreferences(String note, String key, Context context ) {
+    public void saveToSharedPreferences(String note, String key, Context context) {
 
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString(key, note);
@@ -84,13 +66,46 @@ public class MainActivity extends AppCompatActivity implements FragmentLisener {
 
     }
 
-
-
     @Override
-    public String getSharedPreferences(String key){
+    public String getSharedPreferences(String key) {
 
         return sharedPreferences.getString(key, "");
 
     }
+
+    @Override
+    public void openFragment(Fragment fragment, FragmentActivity context) {
+
+        context.getSupportFragmentManager()
+
+                .beginTransaction()
+
+                .setCustomAnimations(R.anim.enter, R.anim.exit, R.anim.pop_enter, R.anim.pop_exit)
+
+                .replace(R.id.container, fragment)
+
+                .addToBackStack(null)
+
+                .commit();
+    }
+
+
+    @Override
+    public void backFragment(Fragment fragment, FragmentActivity context) {
+
+        context.getSupportFragmentManager()
+
+                .beginTransaction()
+
+                .setCustomAnimations(R.anim.pop_enter, R.anim.pop_exit, R.anim.enter, R.anim.exit)
+
+                .replace(R.id.container, fragment)
+
+                .addToBackStack(null)
+
+                .commit();
+    }
+
+
 
 }

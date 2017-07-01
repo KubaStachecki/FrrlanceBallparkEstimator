@@ -100,7 +100,7 @@ public class TaxesFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.back6):
 
-                fragmentLisener.openFragment(BonusFragment.newInstance(), getActivity());
+                fragmentLisener.backFragment(BonusFragment.newInstance(), getActivity());
 
 
         }

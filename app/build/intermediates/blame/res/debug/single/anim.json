@@ -12,6 +12,10 @@
         "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_slide_out_top.xml"
     },
     {
+        "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\anim\\exit.xml",
+        "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\src\\main\\res\\anim\\exit.xml"
+    },
+    {
         "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fab_out.xml",
         "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.0\\res\\anim\\fab_out.xml"
     },
@@ -26,6 +30,10 @@
     {
         "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
         "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\anim\\pop_exit.xml",
+        "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\src\\main\\res\\anim\\pop_exit.xml"
     },
     {
         "merged": "C:\\Users\\cordy\\AndroidStudioProjects\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
@@ -72,6 +80,10 @@
         "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
+        "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\anim\\pop_enter.xml",
+        "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\src\\main\\res\\anim\\pop_enter.xml"
+    },
+    {
         "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
         "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_fade_in.xml"
     },
@@ -80,12 +92,20 @@
         "source": "C:\\Users\\cordy\\AndroidStudioProjects\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_fade_in.xml"
     },
     {
+        "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\anim\\trans1.xml",
+        "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\src\\main\\res\\anim\\trans1.xml"
+    },
+    {
         "merged": "C:\\Users\\cordy\\AndroidStudioProjects\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
         "source": "C:\\Users\\cordy\\AndroidStudioProjects\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_popup_exit.xml"
     },
     {
         "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
         "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\anim\\enter.xml",
+        "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\src\\main\\res\\anim\\enter.xml"
     },
     {
         "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",

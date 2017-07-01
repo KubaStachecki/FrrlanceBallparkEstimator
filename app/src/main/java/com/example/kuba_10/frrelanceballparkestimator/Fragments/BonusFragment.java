@@ -109,7 +109,7 @@ public class BonusFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.back5):
 
-                fragmentLisener.openFragment(DiscountFragment.newInstance(), getActivity());
+                fragmentLisener.backFragment(DiscountFragment.newInstance(), getActivity());
 
 
         }

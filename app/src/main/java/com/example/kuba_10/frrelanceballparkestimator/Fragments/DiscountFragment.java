@@ -106,7 +106,7 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.back4):
 
-                fragmentLisener.openFragment(CostFragment.newInstance(), getActivity());
+                fragmentLisener.backFragment(CostFragment.newInstance(), getActivity());
 
 
         }

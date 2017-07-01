@@ -1,4 +1,4 @@
-#Sat Jul 01 14:23:11 CEST 2017
+#Sat Jul 01 17:36:14 CEST 2017
 base.0=F\:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=F\:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

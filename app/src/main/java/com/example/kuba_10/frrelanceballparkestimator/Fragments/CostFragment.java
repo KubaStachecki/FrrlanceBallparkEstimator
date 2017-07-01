@@ -101,7 +101,7 @@ public class CostFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.back3):
 
-                fragmentLisener.openFragment(HoursFragment.newInstance(), getActivity());
+                fragmentLisener.backFragment(HoursFragment.newInstance(), getActivity());
 
         }
     }

@@ -108,7 +108,7 @@ public class HoursFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.back2):
 
-                fragmentLisener.openFragment(RateFragment.newInstance(), getActivity());
+                fragmentLisener.backFragment(RateFragment.newInstance(), getActivity());
 
 
 

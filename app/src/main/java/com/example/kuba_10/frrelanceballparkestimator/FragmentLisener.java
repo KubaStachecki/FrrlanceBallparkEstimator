@@ -9,15 +9,17 @@ import android.support.v4.app.FragmentActivity;
 public interface FragmentLisener {
 
 
-    public void openFragment(Fragment fragment, FragmentActivity context);
+   void openFragment(Fragment fragment, FragmentActivity context);
 
-    public void saveToSharedPreferences(String note, String key, Context context) ;
+   void backFragment(Fragment fragment, FragmentActivity context);
 
-    public String getSharedPreferences(String key);
+   void saveToSharedPreferences(String note, String key, Context context);
 
-    public Numbers getNumberData();
+   String getSharedPreferences(String key);
 
-    public void showSnackbar(String text);
+   Numbers getNumberData();
+
+     void showSnackbar(String text);
 
 
 }

@@ -105,7 +105,7 @@ public class RateFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.back):
 
-                fragmentLisener.openFragment(CurrencyFragment.newInstance(), getActivity());
+                fragmentLisener.backFragment(CurrencyFragment.newInstance(), getActivity());
 
 
         }

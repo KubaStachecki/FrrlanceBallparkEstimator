@@ -75,7 +75,7 @@ public class FinalFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View view) {
 
-        fragmentLisener.openFragment(RateFragment.newInstance(), getActivity());
+        fragmentLisener.backFragment(RateFragment.newInstance(), getActivity());
 
 
     }
