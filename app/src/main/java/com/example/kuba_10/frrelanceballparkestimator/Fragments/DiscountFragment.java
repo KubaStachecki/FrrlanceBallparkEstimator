@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.kuba_10.frrelanceballparkestimator.FragmentLisener;
 import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
 
@@ -20,6 +21,9 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
     Button nextBut4;
     Button backBut4;
     TextView input;
+
+    private FragmentLisener fragmentLisener;
+
 
 
 
@@ -52,12 +56,23 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
 
 
         input = view.findViewById(R.id.discountIn);
-        input.setText(Float.toString(MainActivity.getNumberData().getDiscount()));
+        input.setText(Float.toString(fragmentLisener.getNumberData().getDiscount()));
 
 
 
         return view;
     }
+
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+
+        fragmentLisener = (FragmentLisener) context;
+
+
+    }
+
 
     @Override
     public void onClick(View view) {
@@ -67,17 +82,17 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.next4):
 
-                MainActivity.getNumberData().setDiscount( Float.parseFloat( input.getText().toString() ));
+                fragmentLisener.getNumberData().setDiscount( Float.parseFloat( input.getText().toString() ));
 
 
-                MainActivity.openFragment(BonusFragment.newInstance(), getActivity());
+                fragmentLisener.openFragment(BonusFragment.newInstance(), getActivity());
 
 
                 break;
 
             case (R.id.back4):
 
-                MainActivity.openFragment(CostFragment.newInstance(), getActivity());
+                fragmentLisener.openFragment(CostFragment.newInstance(), getActivity());
 
 
 

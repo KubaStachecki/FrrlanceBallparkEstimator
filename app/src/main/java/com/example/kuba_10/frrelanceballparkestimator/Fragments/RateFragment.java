@@ -1,5 +1,7 @@
 package com.example.kuba_10.frrelanceballparkestimator.Fragments;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.kuba_10.frrelanceballparkestimator.FragmentLisener;
 import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
 
@@ -19,6 +22,10 @@ public class RateFragment extends Fragment implements View.OnClickListener {
     Button nextBut;
     Button backBut;
     TextView input;
+
+    private FragmentLisener fragmentLisener;
+
+
 
 
     public RateFragment() {
@@ -47,10 +54,28 @@ public class RateFragment extends Fragment implements View.OnClickListener {
         backBut.setOnClickListener(this);
 
         input = view.findViewById(R.id.rateIn);
-        input.setText(Float.toString(MainActivity.getNumberData().getRate()));
+
+
+        if (fragmentLisener.getNumberData().getCost() == 0) {
+
+            input.setText("");
+        } else {
+            input.setText(Float.toString(fragmentLisener.getNumberData().getRate()));
+
+        }
 
 
         return view;
+    }
+
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+
+        fragmentLisener = (FragmentLisener) context;
+
+
     }
 
     @Override
@@ -60,21 +85,27 @@ public class RateFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.next):
 
-                MainActivity.getNumberData().setRate(Float.parseFloat(input.getText().toString()));
+                fragmentLisener.getNumberData().setRate(Float.parseFloat(input.getText().toString()));
 
-                MainActivity.openFragment(HoursFragment.newInstance(), getActivity());
+                fragmentLisener.openFragment(HoursFragment.newInstance(), getActivity());
+
+
+
+
 
 
                 break;
 
             case (R.id.back):
 
-                MainActivity.openFragment(CurrencyFragment.newInstance(), getActivity());
+                fragmentLisener.openFragment(CurrencyFragment.newInstance(), getActivity());
 
 
         }
 
 
     }
+
+
 
 }

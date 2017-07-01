@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.kuba_10.frrelanceballparkestimator.FragmentLisener;
 import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
 
@@ -21,6 +22,9 @@ public class CostFragment extends Fragment implements View.OnClickListener {
     Button nextBut3;
     Button backBut3;
     TextView input;
+
+    private FragmentLisener fragmentLisener;
+
 
 
     public CostFragment() {
@@ -33,6 +37,15 @@ public class CostFragment extends Fragment implements View.OnClickListener {
         CostFragment fragment = new CostFragment();
 
         return fragment;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+
+        fragmentLisener = (FragmentLisener) context;
+
+
     }
 
 
@@ -50,7 +63,14 @@ public class CostFragment extends Fragment implements View.OnClickListener {
         backBut3.setOnClickListener(this);
 
         input = view.findViewById(R.id.costIn);
-        input.setText(Float.toString(MainActivity.getNumberData().getCost()));
+
+        if (fragmentLisener.getNumberData().getCost() == 0) {
+
+            input.setText("");
+        } else {
+
+            input.setText(Float.toString(fragmentLisener.getNumberData().getCost()));
+        }
 
 
         return view;
@@ -64,14 +84,14 @@ public class CostFragment extends Fragment implements View.OnClickListener {
         switch (view.getId()) {
             case (R.id.next3):
 
-                MainActivity.getNumberData().setCost(Float.parseFloat(input.getText().toString()));
+                fragmentLisener.getNumberData().setCost(Float.parseFloat(input.getText().toString()));
 
 
-                MainActivity.openFragment(DiscountFragment.newInstance(), getActivity());
+                fragmentLisener.openFragment(DiscountFragment.newInstance(), getActivity());
                 break;
 
             case (R.id.back3):
-                MainActivity.openFragment(HoursFragment.newInstance(), getActivity());
+                fragmentLisener.openFragment(HoursFragment.newInstance(), getActivity());
 
         }
     }

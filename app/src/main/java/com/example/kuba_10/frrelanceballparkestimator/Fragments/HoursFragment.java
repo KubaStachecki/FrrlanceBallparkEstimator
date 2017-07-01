@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.kuba_10.frrelanceballparkestimator.FragmentLisener;
 import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
 
@@ -21,6 +22,9 @@ public class HoursFragment extends Fragment implements View.OnClickListener {
     Button nextBut2;
     Button backBut2;
     TextView input;
+
+    private FragmentLisener fragmentLisener;
+
 
 
 
@@ -34,6 +38,15 @@ public class HoursFragment extends Fragment implements View.OnClickListener {
         HoursFragment fragment = new HoursFragment();
 
         return fragment;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+
+        fragmentLisener = (FragmentLisener) context;
+
+
     }
 
 
@@ -52,7 +65,15 @@ public class HoursFragment extends Fragment implements View.OnClickListener {
         backBut2.setOnClickListener(this);
 
         input =  view.findViewById(R.id.hoursIn);
-        input.setText(Float.toString(MainActivity.getNumberData().getHours()));
+
+
+        if (fragmentLisener.getNumberData().getCost() == 0) {
+
+            input.setText("");
+        } else {
+
+            input.setText(Float.toString(fragmentLisener.getNumberData().getHours()));
+        }
 
         return view;
 
@@ -68,17 +89,17 @@ public class HoursFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.next2):
 
-                MainActivity.getNumberData().setHours( Float.parseFloat( input.getText().toString() ));
+                fragmentLisener.getNumberData().setHours( Float.parseFloat( input.getText().toString() ));
 
 
-                MainActivity.openFragment(CostFragment.newInstance(), getActivity());
+                fragmentLisener.openFragment(CostFragment.newInstance(), getActivity());
 
 
                 break;
 
             case (R.id.back2):
 
-                MainActivity.openFragment(RateFragment.newInstance(), getActivity());
+                fragmentLisener.openFragment(RateFragment.newInstance(), getActivity());
 
 
 

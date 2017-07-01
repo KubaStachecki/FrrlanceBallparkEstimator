@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.kuba_10.frrelanceballparkestimator.FragmentLisener;
 import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
 
@@ -20,6 +21,9 @@ public class FinalFragment extends Fragment implements View.OnClickListener {
     TextView costSum;
     TextView ballpark;
     Button again;
+
+    private FragmentLisener fragmentLisener;
+
 
 
 
@@ -35,6 +39,16 @@ public class FinalFragment extends Fragment implements View.OnClickListener {
         return fragment;
     }
 
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+
+        fragmentLisener = (FragmentLisener) context;
+
+
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -46,9 +60,9 @@ public class FinalFragment extends Fragment implements View.OnClickListener {
         ballpark = view.findViewById(R.id.ballpark);
 
 
-        workCost.setText(Float.toString(MainActivity.getNumberData().workCost()) + "  " + MainActivity.getNumberData().getCurrency());
-        costSum.setText(Float.toString(MainActivity.getNumberData().costSum()) + "  " + MainActivity.getNumberData().getCurrency() );
-        ballpark.setText("" + Float.toString(MainActivity.getNumberData().ballparkMin()) + " - " + Float.toString(MainActivity.getNumberData().ballparkMax()) + "  " + MainActivity.getNumberData().getCurrency());
+        workCost.setText(Float.toString(fragmentLisener.getNumberData().workCost()) + "  " + fragmentLisener.getNumberData().getCurrency());
+        costSum.setText(Float.toString(fragmentLisener.getNumberData().costSum()) + "  " + fragmentLisener.getNumberData().getCurrency() );
+        ballpark.setText("" + Float.toString(fragmentLisener.getNumberData().ballparkMin()) + " - " + Float.toString(fragmentLisener.getNumberData().ballparkMax()) + "  " + fragmentLisener.getNumberData().getCurrency());
 
 
         again = (Button) view.findViewById(R.id.again);
@@ -61,7 +75,7 @@ public class FinalFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View view) {
 
-        MainActivity.openFragment(RateFragment.newInstance(), getActivity());
+        fragmentLisener.openFragment(RateFragment.newInstance(), getActivity());
 
 
     }

@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.kuba_10.frrelanceballparkestimator.FragmentLisener;
 import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
 
@@ -20,6 +21,9 @@ public class TaxesFragment extends Fragment implements View.OnClickListener {
     Button nextBut6;
     Button backBut6;
     TextView input;
+
+    private FragmentLisener fragmentLisener;
+
 
 
 
@@ -47,11 +51,30 @@ public class TaxesFragment extends Fragment implements View.OnClickListener {
 
 
         input = view.findViewById(R.id.taxesIn);
-        input.setText(Float.toString(MainActivity.getNumberData().getTaxes()));
+
+        if (fragmentLisener.getNumberData().getCost() == 0) {
+
+            input.setText("");
+
+        } else {
+
+            input.setText(Float.toString(fragmentLisener.getNumberData().getTaxes()));
+
+        }
 
 
 
         return view;
+    }
+
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+
+        fragmentLisener = (FragmentLisener) context;
+
+
     }
 
     @Override
@@ -61,17 +84,17 @@ public class TaxesFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.next6):
 
-                MainActivity.getNumberData().setTaxes(Float.parseFloat(input.getText().toString()));
+                fragmentLisener.getNumberData().setTaxes(Float.parseFloat(input.getText().toString()));
 
 
-                MainActivity.openFragment(FinalFragment.newInstance(), getActivity());
+                fragmentLisener.openFragment(FinalFragment.newInstance(), getActivity());
 
 
                 break;
 
             case (R.id.back6):
 
-                MainActivity.openFragment(BonusFragment.newInstance(), getActivity());
+                fragmentLisener.openFragment(BonusFragment.newInstance(), getActivity());
 
 
         }

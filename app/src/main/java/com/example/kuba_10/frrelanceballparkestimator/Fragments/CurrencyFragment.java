@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.kuba_10.frrelanceballparkestimator.FragmentLisener;
 import com.example.kuba_10.frrelanceballparkestimator.Numbers;
 import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 
@@ -30,6 +31,8 @@ public class CurrencyFragment extends Fragment implements AdapterView.OnItemClic
     private ListView listView;
     private ArrayList currList;
 
+    private FragmentLisener fragmentLisener;
+
 
     public CurrencyFragment() {
         // Required empty public constructor
@@ -40,6 +43,15 @@ public class CurrencyFragment extends Fragment implements AdapterView.OnItemClic
         CurrencyFragment fragment = new CurrencyFragment();
 
         return fragment;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+
+        fragmentLisener = (FragmentLisener) context;
+
+
     }
 
 
@@ -72,9 +84,9 @@ public class CurrencyFragment extends Fragment implements AdapterView.OnItemClic
 
         String chosenCurr = (String) adapter.getItem(i);
 
-        MainActivity.getNumberData().setCurrency(chosenCurr);
+        fragmentLisener.getNumberData().setCurrency(chosenCurr);
 
-        MainActivity.openFragment(RateFragment.newInstance(), getActivity());
+        fragmentLisener.openFragment(RateFragment.newInstance(), getActivity());
 
 
 
