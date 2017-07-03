@@ -9,18 +9,27 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
+
+
+import com.example.kuba_10.frrelanceballparkestimator.CircularSeekBar;
 
 import com.example.kuba_10.frrelanceballparkestimator.FragmentLisener;
 import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
 
-public class DiscountFragment extends Fragment implements View.OnClickListener {
+
+
+
+public class DiscountFragment extends Fragment implements View.OnClickListener  {
 
 
     Button nextBut4;
     Button backBut4;
     TextView input;
+    CircularSeekBar slider;
 
     private FragmentLisener fragmentLisener;
 
@@ -54,7 +63,7 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
 
         input = view.findViewById(R.id.discountIn);
 
-        if (fragmentLisener.getNumberData().getDiscount() == 0 ) {
+        if (fragmentLisener.getNumberData().getDiscount() == 0) {
 
             input.setText("");
 
@@ -63,6 +72,35 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
             input.setText(Float.toString(fragmentLisener.getNumberData().getDiscount()));
 
         }
+
+        slider = (CircularSeekBar) view.findViewById(R.id.discount_circle);
+
+
+        slider.setProgress((int) fragmentLisener.getNumberData().getDiscount());
+
+        slider.setOnSeekBarChangeListener(new CircularSeekBar.OnCircularSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(CircularSeekBar circularSeekBar, int progress, boolean fromUser) {
+
+                input.setText(Integer.toString(progress));
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(CircularSeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(CircularSeekBar seekBar) {
+
+            }
+        });
+
+
+
+
+
 
 
         return view;
@@ -91,10 +129,15 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
 
                     fragmentLisener.getNumberData().setDiscount(0);
 
+                    Toast.makeText(getActivity(), Float.toString(fragmentLisener.getNumberData().getDiscount()) + "jestesmy w if", Toast.LENGTH_LONG ).show();
+
+
                 } else
 
                 {
-                    fragmentLisener.getNumberData().setDiscount(Float.parseFloat(input.getText().toString()));
+                   fragmentLisener.getNumberData().setDiscount(Float.parseFloat(input.getText().toString()));
+
+                    Toast.makeText(getActivity(), Float.toString(fragmentLisener.getNumberData().getDiscount()), Toast.LENGTH_LONG ).show();
 
                 }
 
