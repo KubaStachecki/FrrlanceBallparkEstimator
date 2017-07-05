@@ -21,15 +21,14 @@ import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
 
 
-
-
-public class DiscountFragment extends Fragment implements View.OnClickListener  {
+public class DiscountFragment extends Fragment implements View.OnClickListener {
 
 
     Button nextBut4;
     Button backBut4;
     TextView input;
     CircularSeekBar slider;
+    int discountAmount;
 
     private FragmentLisener fragmentLisener;
 
@@ -69,7 +68,7 @@ public class DiscountFragment extends Fragment implements View.OnClickListener  
 
         } else {
 
-            input.setText(Float.toString(fragmentLisener.getNumberData().getDiscount()));
+            input.setText(Float.toString(fragmentLisener.getNumberData().getDiscount()) + "%");
 
         }
 
@@ -82,7 +81,8 @@ public class DiscountFragment extends Fragment implements View.OnClickListener  
             @Override
             public void onProgressChanged(CircularSeekBar circularSeekBar, int progress, boolean fromUser) {
 
-                input.setText(Integer.toString(progress));
+                input.setText(Integer.toString(progress) + "%");
+                discountAmount = progress;
 
             }
 
@@ -96,11 +96,6 @@ public class DiscountFragment extends Fragment implements View.OnClickListener  
 
             }
         });
-
-
-
-
-
 
 
         return view;
@@ -129,15 +124,15 @@ public class DiscountFragment extends Fragment implements View.OnClickListener  
 
                     fragmentLisener.getNumberData().setDiscount(0);
 
-                    Toast.makeText(getActivity(), Float.toString(fragmentLisener.getNumberData().getDiscount()) + "jestesmy w if", Toast.LENGTH_LONG ).show();
+                  //  Toast.makeText(getActivity(), Float.toString(fragmentLisener.getNumberData().getDiscount()) + "jestesmy w if", Toast.LENGTH_LONG).show();
 
 
                 } else
 
                 {
-                   fragmentLisener.getNumberData().setDiscount(Float.parseFloat(input.getText().toString()));
+                    fragmentLisener.getNumberData().setDiscount(discountAmount);
 
-                    Toast.makeText(getActivity(), Float.toString(fragmentLisener.getNumberData().getDiscount()), Toast.LENGTH_LONG ).show();
+                 //   Toast.makeText(getActivity(), Float.toString(fragmentLisener.getNumberData().getDiscount()), Toast.LENGTH_LONG).show();
 
                 }
 

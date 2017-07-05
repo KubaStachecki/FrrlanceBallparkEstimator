@@ -105,6 +105,33 @@ public class Numbers {
 
     }
 
+    public float taxesCost() {
+
+        workCost = rate * hours;
+
+        return (workCost /100)*taxes;
+
+    }
+
+    public float bonusCost() {
+
+        workCost = rate * hours;
+
+        return (workCost /100)*bonus;
+
+    }
+
+    public float discountCost() {
+
+        workCost = rate * hours;
+
+        return workCost - (workCost /100)*discount;
+
+    }
+
+
+
+
     public float costSum() {
 
         float workAmount = workCost();

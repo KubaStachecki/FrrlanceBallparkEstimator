@@ -1,8 +1,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.kuba_10.frrelanceballparkestimator.Fragments.CostFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -11,48 +11,86 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/estimationImage"
-            android:layout_width="match_parent"
+        />
+        <View
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:tint="@android:color/holo_blue_light"
-            app:srcCompat="@mipmap/ic_launcher" />
+            android:layout_weight="1"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="2"
+            android:layout_margin="30dp"
             android:gravity="center"
-            android:text="COST"
+            android:text="Costs"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="normal"
+
 
             />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:text="@string/costs"
+            android:textSize="20dp"
+            android:typeface="normal" />
+
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
-            android:text="0"
-
             android:id="@+id/costIn"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/next3"
-            android:onClick=""
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:text="Next" />
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:inputType="number"
+            android:textSize="20dp"
+            android:text="0" />
 
-        <Button
-            android:id="@+id/back3"
-            android:onClick=""
-            android:layout_width="match_parent"
+        <View
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:text="Back3" />
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal"
+
+            >
+
+
+            <Button
+                android:id="@+id/back3"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/rounded_btn"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="16dp"
+                android:text="Back"
+                android:textColor="@android:color/white" />
+
+            <Button
+
+                android:id="@+id/next3"
+
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/rounded_btn_outline"
+                android:text="Next"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
 
 
     </LinearLayout>

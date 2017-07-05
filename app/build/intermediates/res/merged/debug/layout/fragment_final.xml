@@ -28,17 +28,26 @@
             android:layout_height="wrap_content"
             android:id="@+id/costSum" />
 
-        <TextView
-            android:text="TextView estimation between"
+
+
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:padding="30dp"
+            android:layout_margin="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+
+        <Button
+            android:layout_gravity="bottom"
+            android:text="Generate ballpark estimation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/ballpark" />
-
-        <Button
-            android:text="Again"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/again" />
     </LinearLayout>
 
 </FrameLayout>

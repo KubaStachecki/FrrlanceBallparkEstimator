@@ -1,6 +1,12 @@
 <resources>
-    <string name="app_name">Qucik Price Estimator</string>
-
+    <string name="app_name">Quick Price Estimator</string>
+    <string name="welcome_text">With the next few questions we will help you give quick ballpark estimation of your project price.</string>
+    <string name="hours_text">Type in your working hours amount estimation for this project </string>
+    <string name="hours_rate">Type in amount of money you charge of one hour - without taxes</string>
+    <string name="costs">Are there any additional costs? Stock photography, music, fuel, paychecks or any other expenses on Your side?</string>
+    <string name="bonus">bonuuuusususususus</string>
+    <string name="discount">Is it a returning business, friend of yours, small local charity organization?
+Do you want to give any discount to this client?</string>
 
 
 </resources>
