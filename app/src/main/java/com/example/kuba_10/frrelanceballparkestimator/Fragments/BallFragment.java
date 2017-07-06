@@ -98,7 +98,7 @@ public class BallFragment extends Fragment implements View.OnClickListener {
 
                 fragmentLisener.backFragment(HoursFragment.newInstance(), getActivity());
 
-//                Toast.makeText(getActivity(), "test guzika", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity(), "test guzika back", Toast.LENGTH_SHORT).show();
 
                 break;
             case R.id.sms_butt:
