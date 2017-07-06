@@ -60,7 +60,14 @@ public class TaxesFragment extends Fragment implements View.OnClickListener {
 
             input.setText(fragmentLisener.getSharedPreferences("taxes") + "%");
 
-            taxesAmount = Integer.parseInt(fragmentLisener.getSharedPreferences("taxes"));
+            if(fragmentLisener.getSharedPreferences("taxes") == ""){
+
+                input.setText("0%");
+
+                taxesAmount = 0;
+            }else{
+
+            taxesAmount = Integer.parseInt(fragmentLisener.getSharedPreferences("taxes")); }
 
         }
 
@@ -108,12 +115,15 @@ public class TaxesFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.next6):
 
-
                 fragmentLisener.saveToSharedPreferences(Integer.toString(taxesAmount), "taxes", getActivity());
 
-                if (input.getText().toString().equals("")) {
+
+                if (input.getText().toString().equals("%")) {
+
+
 
                     fragmentLisener.getNumberData().setTaxes(0);
+
                 } else
 
                 {
