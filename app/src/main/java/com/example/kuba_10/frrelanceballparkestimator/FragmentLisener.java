@@ -1,5 +1,6 @@
 package com.example.kuba_10.frrelanceballparkestimator;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.v4.app.Fragment;
@@ -20,6 +21,9 @@ public interface FragmentLisener {
    Numbers getNumberData();
 
      void showSnackbar(String text);
+
+   void BackButton(Activity c);
+
 
 
 }

@@ -19,13 +19,11 @@ import com.example.kuba_10.frrelanceballparkestimator.R;
 public class HoursFragment extends Fragment implements View.OnClickListener {
 
 
-    Button nextBut2;
-    Button backBut2;
-    TextView input;
+    private Button nextBut2;
+    private Button backBut2;
+    private TextView input;
 
     private FragmentLisener fragmentLisener;
-
-
 
 
     public HoursFragment() {
@@ -33,7 +31,6 @@ public class HoursFragment extends Fragment implements View.OnClickListener {
     }
 
 
-    // TODO: Rename and change types and number of parameters
     public static HoursFragment newInstance() {
         HoursFragment fragment = new HoursFragment();
 
@@ -64,7 +61,7 @@ public class HoursFragment extends Fragment implements View.OnClickListener {
         backBut2 = (Button) view.findViewById(R.id.back2);
         backBut2.setOnClickListener(this);
 
-        input =  view.findViewById(R.id.hoursIn);
+        input = view.findViewById(R.id.hoursIn);
 
 
         if (fragmentLisener.getNumberData().getCost() == 0) {
@@ -84,7 +81,6 @@ public class HoursFragment extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
 
 
-
         switch (view.getId()) {
 
             case (R.id.next2):
@@ -96,28 +92,26 @@ public class HoursFragment extends Fragment implements View.OnClickListener {
                 } else
 
                 {
-                    fragmentLisener.getNumberData().setHours( Float.parseFloat( input.getText().toString() ));
+                    fragmentLisener.getNumberData().setHours(Float.parseFloat(input.getText().toString()));
                     fragmentLisener.openFragment(CostFragment.newInstance(), getActivity());
 
                 }
-
-
 
 
                 break;
 
             case (R.id.back2):
 
-                fragmentLisener.backFragment(RateFragment.newInstance(), getActivity());
+                fragmentLisener.BackButton(getActivity());
 
 
-
-
-        }
-
+//                fragmentLisener.backFragment(RateFragment.newInstance(), getActivity());
 
 
         }
 
 
     }
+
+
+}

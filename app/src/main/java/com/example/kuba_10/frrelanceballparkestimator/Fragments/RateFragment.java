@@ -19,9 +19,11 @@ import com.example.kuba_10.frrelanceballparkestimator.R;
 public class RateFragment extends Fragment implements View.OnClickListener {
 
 
-    Button nextBut;
-    Button backBut;
-    TextView input;
+    private Button nextBut;
+    private Button backBut;
+    private TextView input;
+    private TextView currency;
+    private int rate;
 
     private FragmentLisener fragmentLisener;
 
@@ -30,7 +32,6 @@ public class RateFragment extends Fragment implements View.OnClickListener {
         // Required empty public constructor
     }
 
-    // TODO: Rename and change types and number of parameters
     public static RateFragment newInstance() {
         RateFragment fragment = new RateFragment();
 
@@ -53,10 +54,14 @@ public class RateFragment extends Fragment implements View.OnClickListener {
 
         input = view.findViewById(R.id.rateIn);
 
+        currency = view.findViewById(R.id.rate_curr);
+        currency.setText(fragmentLisener.getNumberData().getCurrency());
+
 
         if (fragmentLisener.getNumberData().getRate() == 0 && fragmentLisener.getSharedPreferences("rate") == null) {
 
             input.setText("");
+
 
         } else {
 
@@ -99,13 +104,13 @@ public class RateFragment extends Fragment implements View.OnClickListener {
                 }
 
 
-
-
                 break;
 
             case (R.id.back):
 
-                fragmentLisener.backFragment(CurrencyFragment.newInstance(), getActivity());
+
+                fragmentLisener.BackButton(getActivity());
+//                fragmentLisener.backFragment(CurrencyFragment.newInstance(), getActivity());
 
 
         }

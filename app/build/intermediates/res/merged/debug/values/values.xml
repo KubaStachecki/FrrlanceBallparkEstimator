@@ -71,6 +71,10 @@
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+    <color name="wheel1">#009688</color>
+    <color name="wheel2">#FF5252</color>
+    <color name="wheel3">#FFAB40</color>
+    <color name="wheel4">#00BCD4</color>
     <declare-styleable name="ActionBar"><attr name="navigationMode">
             
             <enum name="normal" value="0"/>
@@ -351,14 +355,19 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="app_name">Quick Price Estimator</string>
-    <string name="bonus">bonuuuusususususus</string>
+    <string name="ballapark">With this quick ballpark estimation You will make sure that You are on the same page with your client, just remember to send a full formal budget later!</string>
+    <string name="bonus">Do your client require extra speed, care, night hours or your project files?
+Do you want to add any extra price for any reason?</string>
     <string name="costs">Are there any additional costs? Stock photography, music, fuel, paychecks or any other expenses on Your side?</string>
-    <string name="discount">discountostaskf</string>
-    <string name="hours_rate">Type in amount of money you charge of one hour - without taxes</string>
-    <string name="hours_text">Type in your working hours amount estimation for this project </string>
+    <string name="discount">Is it a returning business, friend of yours, small local charity organization?
+Do you want to give any discount to this client?</string>
+    <string name="final_text">You have finished Your quick budget setup! Here is your fast estimation of price:</string>
+    <string name="hours_rate">Type in amount of money You charge of one hour - without taxes:</string>
+    <string name="hours_text">Type in your working hours amount estimation for this project: </string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <string name="welcome_text">With the next few questions we will help you give quick ballpark estimation of your project price.</string>
+    <string name="tax_rate">What is your income tax rate?</string>
+    <string name="welcome_text">With the next few questions we will help you give quick ballpark estimation of Your project price.</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,11 +33,11 @@ import java.util.ArrayList;
 
 public class FinalFragment extends Fragment implements View.OnClickListener {
 
-    TextView workCost;
-    TextView costSum;
-Button ball;
+    private TextView workCost;
+    private TextView costSum;
+    private Button ball;
 
-    PieChart chart;
+    private PieChart chart;
 
     private FragmentLisener fragmentLisener;
 
@@ -46,7 +47,6 @@ Button ball;
     }
 
 
-    // TODO: Rename and change types and number of parameters
     public static FinalFragment newInstance() {
         FinalFragment fragment = new FinalFragment();
 
@@ -72,24 +72,22 @@ Button ball;
         ball = (Button) view.findViewById(R.id.ballpark);
         ball.setOnClickListener(this);
 
-        workCost = view.findViewById(R.id.workCost);
-        costSum = view.findViewById(R.id.costSum);
+//        workCost = view.findViewById(R.id.workCost);
+//        costSum = view.findViewById(R.id.costSum);
 
 
-        workCost.setText(Float.toString(fragmentLisener.getNumberData().workCost()) + "  " + fragmentLisener.getNumberData().getCurrency());
-        costSum.setText(Float.toString(fragmentLisener.getNumberData().costSum()) + "  " + fragmentLisener.getNumberData().getCurrency());
-
-
+//        workCost.setText(Float.toString(fragmentLisener.getNumberData().workCost()) + "  " + fragmentLisener.getNumberData().getCurrency());
+//        costSum.setText(Float.toString(fragmentLisener.getNumberData().costSum()) + "  " + fragmentLisener.getNumberData().getCurrency());
 
 
         chart = (PieChart) view.findViewById(R.id.chart);
 
-        chart.setCenterText("Summary: \n" +  Integer.toString((int) fragmentLisener.getNumberData().costSum()));
+        chart.setCenterText("Summary: \n" + Integer.toString((int) fragmentLisener.getNumberData().costSum()) + " " + fragmentLisener.getNumberData().getCurrency());
         chart.setRotationEnabled(true);
-        chart.setHoleRadius(80);
-        chart.setCenterTextSize(30);
-        chart.setTransparentCircleRadius(85);
-        chart.setTransparentCircleAlpha(100);
+        chart.setHoleRadius(65);
+        chart.setCenterTextSize(20);
+        chart.setTransparentCircleRadius(75);
+        chart.setTransparentCircleAlpha(50);
         chart.setEntryLabelColor(Color.BLACK);
         chart.setEntryLabelTextSize(10);
         chart.animateY(2000);
@@ -148,14 +146,12 @@ Button ball;
 
         ArrayList<PieEntry> pieEntries = new ArrayList<>();
 
-        for (int i = 0; i < pieList.size() ; i++) {
+        for (int i = 0; i < pieList.size(); i++) {
 
             pieEntries.add((new PieEntry(pieList.get(i), nameList.get(i))));
 
 
         }
-
-
 
 
         PieDataSet pieDataSet = new PieDataSet(pieEntries, "");
@@ -164,14 +160,12 @@ Button ball;
         pieDataSet.setValueTextSize(12);
 
         ArrayList<Integer> colors = new ArrayList<>();
-        colors.add(Color.GREEN);  //work
-        colors.add(Color.RED);
-        colors.add(Color.BLUE);
-        colors.add(Color.YELLOW);
-        colors.add(Color.MAGENTA);
+        colors.add(ContextCompat.getColor(getActivity(), R.color.wheel1));
+        colors.add(ContextCompat.getColor(getActivity(), R.color.wheel2));
+        colors.add(ContextCompat.getColor(getActivity(), R.color.wheel3));
+        colors.add(ContextCompat.getColor(getActivity(), R.color.wheel4));
 
         pieDataSet.setColors(colors);
-
 
 
         Legend legend = chart.getLegend();

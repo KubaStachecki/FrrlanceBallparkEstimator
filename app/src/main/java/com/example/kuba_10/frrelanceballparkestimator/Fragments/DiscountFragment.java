@@ -24,11 +24,11 @@ import com.example.kuba_10.frrelanceballparkestimator.R;
 public class DiscountFragment extends Fragment implements View.OnClickListener {
 
 
-    Button nextBut4;
-    Button backBut4;
-    TextView input;
-    CircularSeekBar slider;
-    int discountAmount;
+    private   Button nextBut4;
+    private   Button backBut4;
+    private   TextView input;
+    private   CircularSeekBar slider;
+    private    int discountAmount;
 
     private FragmentLisener fragmentLisener;
 
@@ -63,19 +63,16 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
         input = view.findViewById(R.id.discountIn);
 
         if (fragmentLisener.getNumberData().getDiscount() == 0) {
-
             input.setText("");
-
         } else {
-
             input.setText(Float.toString(fragmentLisener.getNumberData().getDiscount()) + "%");
-
         }
 
         slider = (CircularSeekBar) view.findViewById(R.id.discount_circle);
 
 
         slider.setProgress((int) fragmentLisener.getNumberData().getDiscount());
+
 
         slider.setOnSeekBarChangeListener(new CircularSeekBar.OnCircularSeekBarChangeListener() {
             @Override
@@ -144,7 +141,10 @@ public class DiscountFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.back4):
 
-                fragmentLisener.backFragment(CostFragment.newInstance(), getActivity());
+                fragmentLisener.BackButton(getActivity());
+
+
+//                fragmentLisener.backFragment(CostFragment.newInstance(), getActivity());
 
 
         }

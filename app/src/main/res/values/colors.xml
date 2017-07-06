@@ -4,6 +4,13 @@
     <color name="colorPrimaryDark">#387002</color>
     <color name="colorAccent">#f9a825</color>
 
+    <color name="wheel1">#009688</color>
+    <color name="wheel2">#FF5252</color>
+    <color name="wheel3">#FFAB40</color>
+    <color name="wheel4">#00BCD4</color>
+
+
+
 
 
 </resources>

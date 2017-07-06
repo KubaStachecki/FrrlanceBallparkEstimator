@@ -10,44 +10,70 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="FINAL CALCULATION" />
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Congratulations!"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="normal"
+
+
+            />
 
         <TextView
-            android:text="TextView work cost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/workCost" />
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:text="@string/final_text"
+            android:textSize="20dp"
+            android:typeface="normal"/>
 
-        <TextView
-            android:text="TextView calculated cost"
+        <!--<TextView-->
+            <!--android:text="TextView work cost"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/workCost" />-->
 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/costSum" />
+        <!--<TextView-->
+            <!--android:text="TextView calculated cost"-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/costSum" />-->
 
 
 
 
         <com.github.mikephil.charting.charts.PieChart
             android:padding="30dp"
-            android:layout_margin="30dp"
             android:layout_gravity="center"
             android:id="@+id/chart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            />
 
 
 
         <Button
-            android:layout_gravity="bottom"
-            android:text="Generate ballpark estimation"
-            android:layout_width="match_parent"
+            android:id="@+id/ballpark"
+            android:layout_margin="30dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:id="@+id/ballpark" />
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded_btn"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Generate Ballpark"
+            android:textColor="@android:color/white" />
+
+
     </LinearLayout>
 
 </FrameLayout>

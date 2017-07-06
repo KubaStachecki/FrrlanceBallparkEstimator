@@ -1,5 +1,6 @@
 package com.example.kuba_10.frrelanceballparkestimator;
 
+import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -9,6 +10,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
@@ -36,6 +38,8 @@ public class MainActivity extends AppCompatActivity implements FragmentLisener {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
 
     }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,18 +98,21 @@ public class MainActivity extends AppCompatActivity implements FragmentLisener {
     public void backFragment(Fragment fragment, FragmentActivity context) {
 
         context.getSupportFragmentManager()
-
                 .beginTransaction()
-
                 .setCustomAnimations(R.anim.pop_enter, R.anim.pop_exit, R.anim.enter, R.anim.exit)
-
                 .replace(R.id.container, fragment)
-
                 .addToBackStack(null)
-
                 .commit();
     }
 
+
+    @Override
+    public void BackButton(Activity c) {
+
+        c.dispatchKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_BACK));
+        c.dispatchKeyEvent(new KeyEvent(KeyEvent.ACTION_UP, KeyEvent.KEYCODE_BACK));
+
+    }
 
 
 }

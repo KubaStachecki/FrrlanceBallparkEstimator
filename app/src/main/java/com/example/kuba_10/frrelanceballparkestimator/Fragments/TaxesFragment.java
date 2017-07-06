@@ -1,31 +1,31 @@
 package com.example.kuba_10.frrelanceballparkestimator.Fragments;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.kuba_10.frrelanceballparkestimator.CircularSeekBar;
 import com.example.kuba_10.frrelanceballparkestimator.FragmentLisener;
-import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
 
 
 public class TaxesFragment extends Fragment implements View.OnClickListener {
 
-    Button nextBut6;
-    Button backBut6;
-    TextView input;
+    private Button nextBut6;
+    private Button backBut6;
+    private TextView input;
+
+    private CircularSeekBar slider;
+    private int taxesAmount;
 
     private FragmentLisener fragmentLisener;
 
 
-    // TODO: Rename and change types and number of parameters
     public static TaxesFragment newInstance() {
         TaxesFragment fragment = new TaxesFragment();
 
@@ -48,17 +48,44 @@ public class TaxesFragment extends Fragment implements View.OnClickListener {
         backBut6.setOnClickListener(this);
 
 
-        input = view.findViewById(R.id.taxesIn);
+        input = view.findViewById(R.id.taxIn);
 
         if (fragmentLisener.getNumberData().getCost() == 0 && fragmentLisener.getSharedPreferences("taxes") == null) {
 
             input.setText("");
 
+            taxesAmount = 0;
+
         } else {
 
             input.setText(fragmentLisener.getSharedPreferences("taxes"));
 
+            taxesAmount = Integer.parseInt(fragmentLisener.getSharedPreferences("taxes"));
+
         }
+
+
+        slider = (CircularSeekBar) view.findViewById(R.id.tax_circle);
+        slider.setProgress(taxesAmount);
+        slider.setOnSeekBarChangeListener(new CircularSeekBar.OnCircularSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(CircularSeekBar circularSeekBar, int progress, boolean fromUser) {
+
+                input.setText(Integer.toString(progress) + "%");
+                taxesAmount = progress;
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(CircularSeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(CircularSeekBar seekBar) {
+
+            }
+        });
 
 
         return view;
@@ -82,7 +109,7 @@ public class TaxesFragment extends Fragment implements View.OnClickListener {
             case (R.id.next6):
 
 
-                fragmentLisener.saveToSharedPreferences(input.getText().toString(), "taxes", getActivity());
+                fragmentLisener.saveToSharedPreferences(Integer.toString(taxesAmount), "taxes", getActivity());
 
                 if (input.getText().toString().equals("")) {
 
@@ -100,7 +127,10 @@ public class TaxesFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.back6):
 
-                fragmentLisener.backFragment(BonusFragment.newInstance(), getActivity());
+                fragmentLisener.BackButton(getActivity());
+
+
+//                fragmentLisener.backFragment(BonusFragment.newInstance(), getActivity());
 
 
         }

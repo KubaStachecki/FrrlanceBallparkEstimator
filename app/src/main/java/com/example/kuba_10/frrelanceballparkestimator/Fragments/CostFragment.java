@@ -19,9 +19,11 @@ import com.example.kuba_10.frrelanceballparkestimator.R;
 public class CostFragment extends Fragment implements View.OnClickListener {
 
 
-    Button nextBut3;
-    Button backBut3;
-    TextView input;
+    private Button nextBut3;
+    private Button backBut3;
+    private TextView input;
+    private TextView currency;
+
 
     private FragmentLisener fragmentLisener;
 
@@ -63,6 +65,9 @@ public class CostFragment extends Fragment implements View.OnClickListener {
 
         input = view.findViewById(R.id.costIn);
 
+        currency = view.findViewById(R.id.cost_curr);
+        currency.setText(fragmentLisener.getNumberData().getCurrency());
+
         if (fragmentLisener.getNumberData().getCost() == 0) {
 
             input.setText("");
@@ -101,7 +106,10 @@ public class CostFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.back3):
 
-                fragmentLisener.backFragment(HoursFragment.newInstance(), getActivity());
+                fragmentLisener.BackButton(getActivity());
+
+
+//                fragmentLisener.backFragment(HoursFragment.newInstance(), getActivity());
 
         }
     }

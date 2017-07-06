@@ -4,20 +4,130 @@
     android:layout_height="match_parent"
     tools:context="com.example.kuba_10.frrelanceballparkestimator.Fragments.BallFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:text="TextView estimation between"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ballpark" />
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <Button
-        android:layout_gravity="bottom"
-        android:text="Again"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/again" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:text="Ballpark Budget:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="normal"
+
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/ballapark"
+            android:textSize="18dp"
+            android:typeface="normal"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/ballpark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Ballpark Budget"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:typeface="normal"
+
+
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:text="Share via:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="normal"
+
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/email_butt"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/email"
+                android:backgroundTint="@color/colorAccent"
+                android:padding="16dp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/sms_butt"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+
+                android:layout_margin="20dp"
+                android:background="@drawable/sms"
+                android:backgroundTint="@color/colorAccent"
+                android:padding="16dp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/clip_butt"
+                android:layout_width="80dp"
+
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/copy_second"
+                android:backgroundTint="@color/colorAccent"
+                android:padding="16dp"
+                android:text="" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/again"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_btn"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Again"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
 
 
 </FrameLayout>

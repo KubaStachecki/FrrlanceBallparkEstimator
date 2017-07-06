@@ -24,9 +24,8 @@ import butterknife.Unbinder;
 
 public class WelcomeFrag extends Fragment implements View.OnClickListener {
 
-    Button startBut;
+    private Button startBut;
     private FragmentLisener fragmentLisener;
-
 
 
     public WelcomeFrag() {
@@ -34,7 +33,6 @@ public class WelcomeFrag extends Fragment implements View.OnClickListener {
     }
 
 
-    // TODO: Rename and change types and number of parameters
     public static WelcomeFrag newInstance() {
         WelcomeFrag fragment = new WelcomeFrag();
 
@@ -74,12 +72,7 @@ public class WelcomeFrag extends Fragment implements View.OnClickListener {
         // Toast.makeText(getActivity(), "Working", Toast.LENGTH_SHORT).show();
 
 
-
     }
-
-
-
-
 
 
 }

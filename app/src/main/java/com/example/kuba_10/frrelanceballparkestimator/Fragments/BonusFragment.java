@@ -1,26 +1,26 @@
 package com.example.kuba_10.frrelanceballparkestimator.Fragments;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.kuba_10.frrelanceballparkestimator.CircularSeekBar;
 import com.example.kuba_10.frrelanceballparkestimator.FragmentLisener;
-import com.example.kuba_10.frrelanceballparkestimator.MainActivity;
 import com.example.kuba_10.frrelanceballparkestimator.R;
 
 
 public class BonusFragment extends Fragment implements View.OnClickListener {
 
-    Button nextBut5;
-    Button backBut5;
-    TextView input;
+    private Button nextBut5;
+    private Button backBut5;
+    private TextView input;
+    private CircularSeekBar slider;
+    private int bonusAmount;
 
     private FragmentLisener fragmentLisener;
 
@@ -58,16 +58,35 @@ public class BonusFragment extends Fragment implements View.OnClickListener {
         input = view.findViewById(R.id.bonusIn);
 
 
-
-        if (fragmentLisener.getNumberData().getBonus() == 0 ) {
-
+        if (fragmentLisener.getNumberData().getBonus() == 0) {
             input.setText("");
-
         } else {
-            input.setText(Float.toString(fragmentLisener.getNumberData().getBonus()));
-
-
+            input.setText(Float.toString(fragmentLisener.getNumberData().getBonus()) + "%");
         }
+
+        slider = (CircularSeekBar) view.findViewById(R.id.bonus_circle);
+
+        slider.setProgress((int) fragmentLisener.getNumberData().getBonus());
+
+        slider.setOnSeekBarChangeListener(new CircularSeekBar.OnCircularSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(CircularSeekBar circularSeekBar, int progress, boolean fromUser) {
+
+                input.setText(Integer.toString(progress) + "%");
+                bonusAmount = progress;
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(CircularSeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(CircularSeekBar seekBar) {
+
+            }
+        });
 
 
         return view;
@@ -97,7 +116,7 @@ public class BonusFragment extends Fragment implements View.OnClickListener {
                 } else
 
                 {
-                    fragmentLisener.getNumberData().setBonus(Float.parseFloat(input.getText().toString()));
+                    fragmentLisener.getNumberData().setBonus(bonusAmount);
 
                 }
 
@@ -109,7 +128,10 @@ public class BonusFragment extends Fragment implements View.OnClickListener {
 
             case (R.id.back5):
 
-                fragmentLisener.backFragment(DiscountFragment.newInstance(), getActivity());
+                fragmentLisener.BackButton(getActivity());
+
+
+//                fragmentLisener.backFragment(DiscountFragment.newInstance(), getActivity());
 
 
         }

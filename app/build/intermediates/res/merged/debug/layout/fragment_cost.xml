@@ -39,17 +39,41 @@
             android:textSize="20dp"
             android:typeface="normal" />
 
-        <EditText
-            android:id="@+id/costIn"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/colorAccent"
-            android:ems="10"
-            android:layout_gravity="center"
             android:gravity="center"
-            android:inputType="number"
-            android:textSize="20dp"
-            android:text="0" />
+            >
+
+            <EditText
+                android:padding="8dp"
+                android:id="@+id/costIn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:backgroundTint="@color/colorAccent"
+                android:ems="10"
+                android:gravity="center|right"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:padding="8dp"
+
+                android:text="USD"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:ems="10"
+
+                android:layout_gravity="left|center"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cost_curr"
+                />
+        </LinearLayout>
 
         <View
             android:layout_width="wrap_content"
@@ -57,37 +81,45 @@
             android:layout_weight="1"/>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginBottom="30dp"
             android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
 
             >
 
 
+
             <Button
                 android:id="@+id/back3"
-                android:layout_width="170dp"
+                android:layout_width="150dp"
+                android:layout_margin="5dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:background="@drawable/rounded_btn"
-                android:backgroundTint="@color/colorPrimary"
-                android:padding="16dp"
+                android:background="@drawable/rounded_btn_outline"
                 android:text="Back"
-                android:textColor="@android:color/white" />
+                android:textColor="@color/colorPrimary"
+
+                />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="40dp"
+                />
 
             <Button
 
                 android:id="@+id/next3"
-
-                android:layout_width="170dp"
+                android:layout_width="150dp"
+                android:layout_margin="5dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:background="@drawable/rounded_btn_outline"
+                android:background="@drawable/rounded_btn"
+                android:backgroundTint="@color/colorPrimary"
                 android:text="Next"
-                android:textColor="@color/colorPrimary"
-                android:textStyle="bold" />
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                />
 
 
         </LinearLayout>

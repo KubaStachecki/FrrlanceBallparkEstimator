@@ -14,7 +14,7 @@
         <View
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
 
         <TextView
@@ -44,50 +44,59 @@
             android:id="@+id/hoursIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:backgroundTint="@color/colorAccent"
             android:ems="10"
-            android:layout_gravity="center"
             android:gravity="center"
             android:inputType="number"
-            android:textSize="20dp"
-            android:text="0" />
+            android:text="0"
+            android:textSize="20dp" />
 
         <View
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginBottom="30dp"
             android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
 
             >
 
+
+
             <Button
                 android:id="@+id/back2"
-                android:layout_width="170dp"
+                android:layout_width="150dp"
+                android:layout_margin="5dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:background="@drawable/rounded_btn"
-                android:backgroundTint="@color/colorPrimary"
-                android:padding="16dp"
+                android:background="@drawable/rounded_btn_outline"
                 android:text="Back"
-                android:textColor="@android:color/white" />
+                android:textColor="@color/colorPrimary"
+
+                />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="40dp"
+                />
 
             <Button
 
                 android:id="@+id/next2"
-
-                android:layout_width="170dp"
+                android:layout_width="150dp"
+                android:layout_margin="5dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:background="@drawable/rounded_btn_outline"
+                android:background="@drawable/rounded_btn"
+                android:backgroundTint="@color/colorPrimary"
                 android:text="Next"
+                android:textColor="@android:color/white"
                 android:textStyle="bold"
-                android:textColor="@color/colorPrimary" />
+                />
 
 
         </LinearLayout>
