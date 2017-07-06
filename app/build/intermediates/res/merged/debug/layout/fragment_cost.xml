@@ -23,7 +23,7 @@
             android:layout_margin="30dp"
             android:gravity="center"
             android:text="Costs"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:typeface="normal"
 
@@ -36,7 +36,7 @@
             android:layout_margin="30dp"
             android:gravity="center"
             android:text="@string/costs"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:typeface="normal" />
 
         <LinearLayout
@@ -57,7 +57,7 @@
                 android:gravity="center|right"
                 android:inputType="numberDecimal"
                 android:text="0"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 />
 
             <TextView
@@ -65,7 +65,7 @@
 
                 android:text="USD"
                 android:textStyle="bold"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:ems="10"
 
                 android:layout_gravity="left|center"

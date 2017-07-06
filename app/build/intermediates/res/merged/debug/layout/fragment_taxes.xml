@@ -18,7 +18,7 @@
             android:gravity="center"
             android:paddingTop="40dp"
             android:text="Taxes"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:typeface="normal"
 
@@ -31,7 +31,7 @@
             android:layout_margin="20dp"
             android:gravity="center"
             android:text="@string/tax_rate"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:typeface="normal" />
 
 
@@ -73,7 +73,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:text="TextView"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
         </RelativeLayout>
 

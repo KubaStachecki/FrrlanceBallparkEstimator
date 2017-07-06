@@ -90,7 +90,7 @@ public class FinalFragment extends Fragment implements View.OnClickListener {
         chart.setTransparentCircleAlpha(50);
         chart.setEntryLabelColor(Color.BLACK);
         chart.setEntryLabelTextSize(10);
-        chart.animateY(2000);
+        chart.animateY(1250);
 
         Description desc = new Description();
 

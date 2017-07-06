@@ -23,7 +23,7 @@
             android:layout_margin="30dp"
             android:gravity="center"
             android:text="Welcome!"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:typeface="normal"
 
@@ -36,7 +36,7 @@
             android:layout_margin="30dp"
             android:gravity="center"
             android:text="@string/welcome_text"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:typeface="normal"
 
 
