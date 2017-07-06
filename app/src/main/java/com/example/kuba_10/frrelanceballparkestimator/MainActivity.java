@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity implements FragmentLisener {
     public Numbers numberData;
     private SharedPreferences sharedPreferences;
 
+    WelcomeFrag welcomeFrag;
+
+
 
     public Numbers getNumberData() {
         return numberData;
@@ -50,11 +53,11 @@ public class MainActivity extends AppCompatActivity implements FragmentLisener {
 
         container = (FrameLayout) findViewById(R.id.container);
 
-        Fragment welcome = (Fragment) WelcomeFrag.newInstance();
+        welcomeFrag =  WelcomeFrag.newInstance();
 
         numberData = new Numbers();
 
-        openFragment(welcome, this);
+        openFragment(welcomeFrag, this);
 
 
         sharedPreferences = this.getSharedPreferences("dane", Context.MODE_PRIVATE);
@@ -81,15 +84,10 @@ public class MainActivity extends AppCompatActivity implements FragmentLisener {
     public void openFragment(Fragment fragment, FragmentActivity context) {
 
         context.getSupportFragmentManager()
-
                 .beginTransaction()
-
                 .setCustomAnimations(R.anim.enter, R.anim.exit, R.anim.pop_enter, R.anim.pop_exit)
-
                 .replace(R.id.container, fragment)
-
                 .addToBackStack(null)
-
                 .commit();
     }
 
@@ -113,6 +111,16 @@ public class MainActivity extends AppCompatActivity implements FragmentLisener {
         c.dispatchKeyEvent(new KeyEvent(KeyEvent.ACTION_UP, KeyEvent.KEYCODE_BACK));
 
     }
+
+
+    @Override
+    public void onBackPressed() {
+        if(welcomeFrag.isVisible())
+            welcomeFrag.onBackPressed();
+        else
+            super.onBackPressed();
+    }
+
 
 
 }

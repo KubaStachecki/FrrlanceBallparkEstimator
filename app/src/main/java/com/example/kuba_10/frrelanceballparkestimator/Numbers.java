@@ -152,7 +152,7 @@ public class Numbers {
 
         float sum = costSum();
 
-        return sum - ((sum/100) *30);
+        return sum - ((sum/100) *10);
 
     }
 
@@ -161,7 +161,7 @@ public class Numbers {
 
         float sum = costSum();
 
-        return sum + ((sum/100) *30);
+        return sum + ((sum/100) *50);
 
     }
 

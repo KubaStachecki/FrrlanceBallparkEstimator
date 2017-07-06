@@ -74,5 +74,12 @@ public class WelcomeFrag extends Fragment implements View.OnClickListener {
 
     }
 
+    public void onBackPressed() {
+        getActivity().finish();
+
+
+    }
+
+
 
 }
