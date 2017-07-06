@@ -88,7 +88,7 @@ public class FinalFragment extends Fragment implements View.OnClickListener {
         chart.setCenterTextSize(20);
         chart.setTransparentCircleRadius(75);
         chart.setTransparentCircleAlpha(50);
-        chart.setEntryLabelColor(Color.BLACK);
+        chart.setEntryLabelColor(Color.WHITE);
         chart.setEntryLabelTextSize(10);
         chart.animateY(1250);
 
@@ -158,6 +158,7 @@ public class FinalFragment extends Fragment implements View.OnClickListener {
 
         pieDataSet.setSliceSpace(5);
         pieDataSet.setValueTextSize(12);
+        pieDataSet.setValueTextColor(Color.WHITE);
 
         ArrayList<Integer> colors = new ArrayList<>();
         colors.add(ContextCompat.getColor(getActivity(), R.color.wheel1));

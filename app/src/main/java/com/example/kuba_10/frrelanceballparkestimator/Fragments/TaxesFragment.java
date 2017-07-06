@@ -52,13 +52,13 @@ public class TaxesFragment extends Fragment implements View.OnClickListener {
 
         if (fragmentLisener.getNumberData().getCost() == 0 && fragmentLisener.getSharedPreferences("taxes") == null) {
 
-            input.setText("");
+            input.setText("0%");
 
             taxesAmount = 0;
 
         } else {
 
-            input.setText(fragmentLisener.getSharedPreferences("taxes"));
+            input.setText(fragmentLisener.getSharedPreferences("taxes") + "%");
 
             taxesAmount = Integer.parseInt(fragmentLisener.getSharedPreferences("taxes"));
 

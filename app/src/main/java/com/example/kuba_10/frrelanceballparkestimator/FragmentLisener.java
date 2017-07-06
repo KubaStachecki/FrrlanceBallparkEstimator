@@ -10,25 +10,21 @@ import android.support.v4.app.FragmentActivity;
 public interface FragmentLisener {
 
 
-   void openFragment(Fragment fragment, FragmentActivity context);
+    void openFragment(Fragment fragment, FragmentActivity context);
 
-   void backFragment(Fragment fragment, FragmentActivity context);
+    void backFragment(Fragment fragment, FragmentActivity context);
 
-   void saveToSharedPreferences(String note, String key, Context context);
+    void saveToSharedPreferences(String note, String key, Context context);
 
-   String getSharedPreferences(String key);
+    String getSharedPreferences(String key);
 
-   Numbers getNumberData();
+    Numbers getNumberData();
 
-     void showSnackbar(String text);
+    void showSnackbar(String text);
 
-   void BackButton(Activity c);
+    void BackButton(Activity c);
 
-
-    void onBackPressed() ;
-
-
-
+    void onBackPressed();
 
 
 }
