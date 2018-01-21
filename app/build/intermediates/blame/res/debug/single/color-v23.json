@@ -1,42 +1,38 @@
 [
     {
-        "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_text_material.xml",
-        "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_btn_colored_text_material.xml"
+        "merged": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
+        "source": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.1.0\\res\\color-v23\\abc_tint_spinner.xml"
     },
     {
-        "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
-        "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_seek_thumb.xml"
+        "merged": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_text_material.xml",
+        "source": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.1.0\\res\\color-v23\\abc_btn_colored_text_material.xml"
     },
     {
-        "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
-        "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_spinner.xml"
+        "merged": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
+        "source": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.1.0\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
-        "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_edittext.xml"
+        "merged": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.1.0\\res\\color-v23\\abc_color_highlight_material.xml"
     },
     {
-        "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
-        "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_switch_track.xml"
+        "merged": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
+        "source": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.1.0\\res\\color-v23\\abc_tint_default.xml"
     },
     {
-        "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
-        "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_switch_thumb.xml"
+        "merged": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
+        "source": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.1.0\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
-        "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_default.xml"
+        "merged": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.1.0\\res\\color-v23\\abc_tint_edittext.xml"
     },
     {
-        "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
-        "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_tint_btn_checkable.xml"
+        "merged": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
+        "source": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.1.0\\res\\color-v23\\abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
-        "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
-    },
-    {
-        "merged": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
-        "source": "F:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\color-v23\\abc_color_highlight_material.xml"
+        "merged": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.1.0\\res\\color-v23\\abc_tint_switch_track.xml"
     }
 ]

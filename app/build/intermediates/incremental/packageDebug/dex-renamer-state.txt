@@ -1,4 +1,4 @@
-#Thu Jul 06 22:41:54 CEST 2017
-base.0=F\:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+#Sat Jan 20 13:07:37 CET 2018
+base.0=C\:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.0=F\:\\ANDROID_PROJEKTY\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.0=C\:\\Users\\cordy\\Documents\\GitHub\\FrrlanceBallparkEstimator\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
